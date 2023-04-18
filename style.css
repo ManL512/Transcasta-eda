@@ -32,6 +32,7 @@
 }
 
 .logo img {
+    opacity: 1;
     max-width: 100%;
     height: auto;
     background-color: #E6ECEF;
@@ -55,6 +56,8 @@ html {
     left: 0px;
     width: 2080px;
     height: 3526px;
+    /* UI Properties */
+    opacity: 1;
     background: rgb(255,255,255);
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(230,236,239,1) 100%);
 }
@@ -73,6 +76,15 @@ h1 {
     opacity: 1;
 }
 
+.h2{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 30px/38px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+}
+
 
 p {
     font-size: 2rem;
@@ -80,23 +92,25 @@ p {
 
 .menu {
     display: grid;
-    grid-template-columns: 15vw 50vw 15vw 15vw;
+    grid-template-columns: 12vw 60vw 8vw 10vw;
     align-items: center;
     justify-content: left;
+    opacity: 1;
 }
+
 
 .menu_items {
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}   
+
+.shaded{
+    opacity: 0.47;
 }
 
 .main_content {
-        /* Layout Properties */
-    top: 166px;
-    left: 78px;
-    width: 1925px;
-    height: 753px;
+
     /* UI Properties */
     background: #FAFAFA 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -104,6 +118,19 @@ p {
     display: grid;
     grid-template-columns: 5vw 90vw 5vw;
     align-items: center;
+}
+.slider_image{
+    width: auto;
+    background: transparent url('img/1.png') 0% 0% no-repeat padding-box;
+    mix-blend-mode: darken;
+    opacity: 1;
+    position: relative;
+}
+
+.slider_image img {
+    height: 600px;
+    position: absolute;
+    left: -30%;
 }
 
 .left_arrow{
@@ -130,29 +157,26 @@ p {
     background-color: #FAFAFA;
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 4fr; /* Cambiado de "repeat(2, 1fr)" a "1fr 4fr" */
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slider_content {
+    background-color: #FAFAFA;
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
+    display: grid;
+    grid-template-columns: 40% 60%; /* establecemos una relación de 20-80 entre la descripción y la imagen */
     padding: 1rem 4rem;
     box-sizing: border-box;
     position: relative;
 }
 
 .slider_description {
+    text-align: left;
     display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0;
-}
-
-.slider_content img {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    max-height: 300px;
-    /* UI Properties */
-    background: transparent url('img/1.png') 0% 0% no-repeat padding-box;
-    mix-blend-mode: darken;
-    opacity: 1;
+    grid-template-columns: 1fr; /* establecemos una sola columna para la descripción */
 }
 
 .slider_title {
@@ -160,7 +184,15 @@ p {
 }
 
 .primary_button{
+    color: #FAFAFA;
+    margin: 1rem 3rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    height: fit-content;
     /* UI Properties */
+    border: none;
     background: transparent linear-gradient(97deg, #156588 0%, #22673A 100%) 0% 0% no-repeat padding-box;
     box-shadow: inset 3px 3px 6px #88D0DA96;
     border-radius: 34px;
@@ -189,27 +221,24 @@ p {
     background: linear-gradient(45deg, rgba(5,108,216,0) 0%, rgba(5,108,216,1) 48%, rgba(67,160,154,1) 100%);
 }
 
-.primary_button {
-    background: linear-gradient(45deg, rgba(50,136,80,1) 0%, rgba(33,106,138,1) 100%);
-    color: #FAFAFA;
-    margin: 1rem 3rem;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    width: fit-content;
-    height: fit-content;
+.servicios_description{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 25px/31px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
 }
 
 .advantages {
-
     /* Layout Properties */
-top: 919px;
-left: 0px;
-width: 2080px;
-height: 161px;
-/* UI Properties */
-background: #054965 0% 0% no-repeat padding-box;
-opacity: 1;
+    top: 919px;
+    left: 0px;
+    width: 2080px;
+    height: 161px;
+    /* UI Properties */
+    background: #054965 0% 0% no-repeat padding-box;
+    opacity: 1;
     background-color: #054965;
     height: 150px;
 }
