@@ -62,15 +62,10 @@ html {
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(230,236,239,1) 100%);
 }
 
-h1 {
-    /* Layout Properties */
-    top: 268px;
-    left: 144px;
-    width: 741px;
-    height: 150px;
+h1 {    
     /* UI Properties */
     text-align: left;
-    font: normal normal bold 120px/150px Lexend Deca;
+    font: normal normal bold 81px/120px Lexend Deca;
     letter-spacing: 0px;
     color: #063C53;
     opacity: 1;
@@ -79,7 +74,7 @@ h1 {
 .h2{
     /* UI Properties */
     text-align: left;
-    font: normal normal normal 30px/38px Lexend Deca;
+    font: normal normal normal 20px/28px Lexend Deca;
     letter-spacing: 0px;
     color: #105471;
     opacity: 1;
@@ -91,6 +86,7 @@ p {
 }
 
 .menu {
+    
     display: grid;
     grid-template-columns: 12vw 60vw 8vw 10vw;
     align-items: center;
@@ -100,6 +96,7 @@ p {
 
 
 .menu_items {
+    list-style-type: none;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -130,10 +127,15 @@ p {
 .slider_image img {
     height: 600px;
     position: absolute;
-    left: -30%;
+    left: -29%;
+    z-index: -1;
 }
 
 .left_arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
     color: #FAFAFA;
     top: 505px;
     left: 17px;
@@ -144,6 +146,10 @@ p {
 }
 
 .right_arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
     color: #FAFAFA;
     top: 505px;
     left: 17px;
@@ -168,18 +174,20 @@ p {
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
     display: grid;
     grid-template-columns: 40% 60%; /* establecemos una relación de 20-80 entre la descripción y la imagen */
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
     box-sizing: border-box;
     position: relative;
 }
 
 .slider_description {
+    overflow: hidden;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr; /* establecemos una sola columna para la descripción */
 }
 
 .slider_title {
+    margin-top: -100px;
     width: fit-content;
 }
 
@@ -199,14 +207,6 @@ p {
     opacity: 1;
 }
 
-.slider_paragraph{
-    text-align: left;
-    font: normal normal 300 25px/31px Lexend Deca;
-    letter-spacing: 0px;
-    color: #105471;
-    opacity: 1;
-}
-
 .line_gradient{
     display: grid;
     justify-items: end;
@@ -222,6 +222,8 @@ p {
 }
 
 .servicios_description{
+    overflow: hidden;
+    list-style-type: none;
     /* UI Properties */
     text-align: left;
     font: normal normal 300 25px/31px Lexend Deca;
