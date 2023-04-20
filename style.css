@@ -233,14 +233,20 @@ p {
 }
 
 .advantages {
-    /* Layout Properties */
-    top: 919px;
-    left: 0px;
-    width: 2080px;
-    height: 161px;
-    /* UI Properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background: #054965 0% 0% no-repeat padding-box;
     opacity: 1;
-    background-color: #054965;
-    height: 150px;
+}
+.advantages h2,
+.advantages h3 {
+  color: white;
+}
+  
+.group {
+    font-size: small;
+    flex-basis: 25%;
+    text-align: center;
 }
