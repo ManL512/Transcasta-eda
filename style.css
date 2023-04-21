@@ -263,3 +263,17 @@ p {
     height: 100px; /* ajusta la altura según el contenido */
     opacity: 1;
 }
+
+/*         *********** PAGINA DE TURISMO ***********         */
+
+.parragraph-tourism{
+    top: 424px;
+    left: 144px;
+    width: 587px;
+    height: 266px;
+    text-align: left;
+    font: normal normal 300 30px/38px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+}
