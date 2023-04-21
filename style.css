@@ -65,7 +65,7 @@ html {
 h1 {    
     /* UI Properties */
     text-align: left;
-    font: normal normal bold 81px/120px Lexend Deca;
+    font: normal normal bold 105px/150px Lexend Deca;
     letter-spacing: 0px;
     color: #063C53;
     opacity: 1;
@@ -125,9 +125,9 @@ p {
 }
 
 .slider_image img {
-    height: 600px;
+    height: 700px;
     position: absolute;
-    left: -29%;
+    left: -20%;
     z-index: -1;
 }
 
@@ -208,20 +208,23 @@ p {
 }
 
 .line_gradient{
-    display: grid;
+    display: contents;
     justify-items: end;
     position: relative;
     top: -5rem;
 }
 
 .line_gradient_separation {
-    width: 10%;
-    display: grid;
-    height: 0.6rem;
-    background: linear-gradient(45deg, rgba(5,108,216,0) 0%, rgba(5,108,216,1) 48%, rgba(67,160,154,1) 100%);
+    width: 68px;
+    height: 5px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+    background: transparent linear-gradient(295deg, #056CD800 0%, #056CD8 15%, #43A09A 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 19px #2287F1;
+    opacity: 1;
 }
 
 .servicios_description{
+    max-width: 500px;    
     overflow: hidden;
     list-style-type: none;
     /* UI Properties */
@@ -247,6 +250,16 @@ p {
   
 .group {
     font-size: small;
-    flex-basis: 25%;
+    flex-basis: 18%;
     text-align: center;
+}
+
+.group-inverted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    height: 100px; /* ajusta la altura según el contenido */
+    opacity: 1;
 }
