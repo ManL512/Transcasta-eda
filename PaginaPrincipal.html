@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trancastañeda</title>
@@ -41,6 +43,22 @@
 
 <body>
 
+    <script>
+
+            const icono = document.getElementById('icono');
+            const contenido = document.getElementById('contenido');
+
+            icono.addEventListener('click', () => {
+            if (contenido.style.display === 'none') {
+                contenido.style.display = 'block';
+            } else {
+                contenido.style.display = 'none';
+            }
+            });
+
+
+    </script>
+
     <style>
 
         .servicios_description{
@@ -59,6 +77,78 @@
             text-align: left;
             padding: 0;
             margin: 0;
+        }
+        .zoneBox1{
+            top: 1502px;
+            left: 98px;
+            opacity: 1;
+        }
+
+        .zoneContent1{
+            top: 1502px;
+            left: 98px;
+            width: 1699px;
+            height: 607px;
+            /* UI Properties */
+            opacity: 1;
+            overflow: scroll;
+        }
+
+        .zoneTitle{
+            background: #E8EDF080 0% 0% no-repeat padding-box;
+            opacity: 1;
+            width: 1925px;
+            height: 123px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .zones .zoneTitle ion-icon {
+            margin-left: auto;
+            margin-right: 5%;
+        }
+
+        .location-icon{
+            width: 37px;
+            height: 52px;
+            transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+            /* UI Properties */
+            opacity: 1;
+        }
+
+        .city-info {
+            display: flex;
+            align-items: center;
+            font-family: 'Saira Condensed', sans-serif;
+        }
+
+        .left-side{
+            float: left;
+        }
+
+        .right-side{
+            float: right;
+        }
+
+
+        .ciudad{
+            height: 50px;
+            text-align: left;
+            font: normal normal medium 40px/50px Readex Pro Deca;
+            color: #063C53;
+            opacity: 1;
+        }
+
+        .Dpto{
+            height: 50px;
+            text-align: left;
+            font: normal normal 200 40px/50px Readex Pro Deca;
+            letter-spacing: 0px;
+            color: #063C53;
+            opacity: 1;
+            font-family: 'Saira Condensed', sans-serif;;
         }
 
     </style>
@@ -94,10 +184,11 @@
                 <img src="1.png"> 
             </div>
         </div>
-        <div class="right_arrow"> > </div>
+
+        <div class="right_arrow"> <a href="servicio-turismo.html" style="color: white;">  >  </a> </div>
     </div>
 
-    <div class="advantages" style="justify-content: start; width: 1920px;">
+    <div class="advantages">
         <div class="group-inverted">
             <h2>> > ></h2>
         </div>
@@ -137,12 +228,121 @@
           <h2>Tecnologico</h2>
           <h3>Apps que gestionan el servicio</h3>
         </div>
-      </div>
+    </div>
+
+    <div class="social-responsability" style="font-size: 48px;">
+        <h2> Responsabilidad social y empresarial </h2>
+
+        <div class="zones">
+
+            <div class="zoneBox1">
+                <div class="zoneTitle">
+                  <h3> Magdalena Medio </h3>
+                  <ion-icon name="chevron-down-outline" id="icono"></ion-icon>
+                </div>
+                <div class="zoneContent1" id="contenido" style="display:block">
+
+                    <div class="left-side">
+
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> El llanito, </h5>
+                            <h5 class="Dpto"> Barrancabermeja</h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Galan, </h5>
+                            <h5 class="Dpto"> Barrancabermeja</h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Centro, </h5>
+                            <h5 class="Dpto"> Barrancabermeja</h5>
+                        </div>
+    
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Puerto Wilches, </h5>
+                            <h5 class="Dpto"> Santander</h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Bonanza, </h5>
+                            <h5 class="Dpto"> Santander</h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Boranda, </h5>
+                            <h5 class="Dpto"> Santander</h5>
+                        </div>
+    
+                    </div>
+
+                    <div class="right-side">
+
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> La Lizama, </h5>
+                            <h5 class="Dpto"> Barrancabermeja</h5>
+                        </div>
+                        
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Tibú, </h5>
+                            <h5 class="Dpto"> Norte de Santander</h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> Aguachica,   </h5>
+                            <h5 class="Dpto"> Cesar </h5>
+                        </div>
+    
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> San Rafael de Lebrija, </h5>
+                            <h5 class="Dpto"> Santander</h5>
+                        </div>
+                        
+                        <div class="city-info">
+                            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                            <h5 class="ciudad"> San Martín, </h5>
+                            <h5 class="Dpto"> Santander</h5>
+                        </div>
+
+                    </div> 
+                
+                </div>
+            </div>
+              
+            
+              <div class="zoneBox2">
+                <div class="zoneTitle">
+                  <h3> Costa </h3>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </div>
+            
+              <div class="zoneBox3">
+                <div class="zoneTitle">
+                  <h3> Zona Llanos </h3>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </div>
+
+    </div>
+
+
+
       
     <a href="https://wa.me/+573212212121" class="whatsapp" target="_blank">
         <ion-icon name="logo-whatsapp" style="height: 50px; width: 50px; color: #FAFAFA;"></ion-icon>
     </a>
-
       
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
