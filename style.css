@@ -241,7 +241,7 @@ p {
     flex-wrap: wrap;
     background: #054965 0% 0% no-repeat padding-box;
     opacity: 1;
-    justify-content: start; 
+    justify-content: center; 
     width: 1920px;
 }
 .advantages h2,
@@ -278,4 +278,76 @@ p {
     letter-spacing: 0px;
     color: #105471;
     opacity: 1;
+}
+
+/*         *********** PAGINA NOSOTROS ***********         */
+
+.zones{
+    font-size: x-large;
+}
+
+/*Madgalena medio*/
+
+.zoneBox1{
+    /* Layout Properties */
+    width: 1925px;
+    height: 773px;
+    /* UI Properties */
+    opacity: 1;
+}
+
+.zoneContent{
+    /* Layout Properties */
+    width: 1699px;
+    height: auto;
+    /* UI Properties */
+    opacity: 1;
+    overflow: scroll;
+}
+
+
+.zoneTitle{
+    background: #b0b6b95d 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 1900px;
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.location-icon{
+    width: 37px;
+    height: 35px;
+    transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+    /* UI Properties */
+    opacity: 1;
+}
+
+.city-info {
+    display: flex;
+    align-items: center;
+    font-family: 'Saira Condensed', sans-serif; /* Aquí puedes ajustar el valor de los márgenes */
+    flex-direction: row;
+    height: 110px;
+}
+
+.left-side{
+    float: left;
+}
+
+.right-side{
+    float: right;
+}
+
+.Dpto{
+    height: 50px;
+    text-align: left;
+    font: normal normal 200 40px/50px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: x-large;
 }
