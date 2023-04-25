@@ -78,26 +78,35 @@
             padding: 0;
             margin: 0;
         }
+
+        .zones{
+            font-size: x-large;
+        }
+
+        /*Madgalena medio*/
+
         .zoneBox1{
-            top: 1502px;
-            left: 98px;
+            /* Layout Properties */
+            width: 1925px;
+            height: 773px;
+            /* UI Properties */
             opacity: 1;
         }
 
-        .zoneContent1{
-            top: 1502px;
-            left: 98px;
+        .zoneContent{
+            /* Layout Properties */
             width: 1699px;
-            height: 607px;
+            height: auto;
             /* UI Properties */
             opacity: 1;
             overflow: scroll;
         }
 
+
         .zoneTitle{
-            background: #E8EDF080 0% 0% no-repeat padding-box;
+            background: #b0b6b95d 0% 0% no-repeat padding-box;
             opacity: 1;
-            width: 1925px;
+            width: 1900px;
             height: 123px;
             display: flex;
             justify-content: space-between;
@@ -105,14 +114,9 @@
             cursor: pointer;
         }
 
-        .zones .zoneTitle ion-icon {
-            margin-left: auto;
-            margin-right: 5%;
-        }
-
         .location-icon{
             width: 37px;
-            height: 52px;
+            height: 35px;
             transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
             /* UI Properties */
             opacity: 1;
@@ -121,7 +125,9 @@
         .city-info {
             display: flex;
             align-items: center;
-            font-family: 'Saira Condensed', sans-serif;
+            font-family: 'Saira Condensed', sans-serif; /* Aquí puedes ajustar el valor de los márgenes */
+            flex-direction: row;
+            height: 110px;
         }
 
         .left-side{
@@ -132,15 +138,6 @@
             float: right;
         }
 
-
-        .ciudad{
-            height: 50px;
-            text-align: left;
-            font: normal normal medium 40px/50px Readex Pro Deca;
-            color: #063C53;
-            opacity: 1;
-        }
-
         .Dpto{
             height: 50px;
             text-align: left;
@@ -148,7 +145,8 @@
             letter-spacing: 0px;
             color: #063C53;
             opacity: 1;
-            font-family: 'Saira Condensed', sans-serif;;
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: x-large;
         }
 
     </style>
@@ -189,9 +187,13 @@
     </div>
 
     <div class="advantages">
-        <div class="group-inverted">
-            <h2>> > ></h2>
-        </div>
+        <a href="">        
+            <div class="ver-mas" style="display: grid; justify-content: space-around; font-size: x-large;" >
+                <ion-icon name="chevron-down-outline" style="color: #D9D9D9;"></ion-icon>
+                <ion-icon name="chevron-down-outline" style="color: #D9D9D9;"></ion-icon>
+                <ion-icon name="chevron-down-outline" style="color: #D9D9D9;" ></ion-icon>
+            </div>
+        </a>
 
         <div class="line_gradient">
             <div class="line_gradient_separation"></div>
@@ -230,7 +232,7 @@
         </div>
     </div>
 
-    <div class="social-responsability" style="font-size: 48px;">
+    <div class="social-responsability" style="font-size: 48px;" id="social-responsability">
         <h2> Responsabilidad social y empresarial </h2>
 
         <div class="zones">
@@ -240,45 +242,45 @@
                   <h3> Magdalena Medio </h3>
                   <ion-icon name="chevron-down-outline" id="icono"></ion-icon>
                 </div>
-                <div class="zoneContent1" id="contenido" style="display:block">
+                <div class="zoneContent" id="contenido" style="display:block">
 
                     <div class="left-side">
 
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> El llanito, </h5>
-                            <h5 class="Dpto"> Barrancabermeja</h5>
+                            <h5> El llanito, </h5>
+                            <h5 class="Dpto">  &nbsp;Barrancabermeja</h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Galan, </h5>
-                            <h5 class="Dpto"> Barrancabermeja</h5>
+                            <h5> Galan, </h5>
+                            <h5 class="Dpto">  &nbsp;Barrancabermeja</h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Centro, </h5>
-                            <h5 class="Dpto"> Barrancabermeja</h5>
+                            <h5> Centro, </h5>
+                            <h5 class="Dpto">  &nbsp;Barrancabermeja</h5>
                         </div>
     
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Puerto Wilches, </h5>
-                            <h5 class="Dpto"> Santander</h5>
+                            <h5> Puerto Wilches, </h5>
+                            <h5 class="Dpto">  &nbsp; Santander</h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Bonanza, </h5>
-                            <h5 class="Dpto"> Santander</h5>
+                            <h5> Bonanza, </h5>
+                            <h5 class="Dpto">  &nbsp; Santander</h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Boranda, </h5>
-                            <h5 class="Dpto"> Santander</h5>
+                            <h5> Boranda, </h5>
+                            <h5 class="Dpto">  &nbsp; Santander</h5>
                         </div>
     
                     </div>
@@ -287,32 +289,32 @@
 
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> La Lizama, </h5>
-                            <h5 class="Dpto"> Barrancabermeja</h5>
+                            <h5> La Lizama, </h5>
+                            <h5 class="Dpto">  &nbsp; Barrancabermeja</h5>
                         </div>
                         
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Tibú, </h5>
-                            <h5 class="Dpto"> Norte de Santander</h5>
+                            <h5> Tibú, </h5>
+                            <h5 class="Dpto">  &nbsp; Norte de Santander</h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> Aguachica,   </h5>
-                            <h5 class="Dpto"> Cesar </h5>
+                            <h5> Aguachica,   </h5>
+                            <h5 class="Dpto">  &nbsp; Cesar </h5>
                         </div>
     
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> San Rafael de Lebrija, </h5>
-                            <h5 class="Dpto"> Santander</h5>
+                            <h5> San Rafael de Lebrija, </h5>
+                            <h5 class="Dpto">  &nbsp; Santander</h5>
                         </div>
                         
                         <div class="city-info">
                             <ion-icon name="location-outline" class="location-icon"></ion-icon>
-                            <h5 class="ciudad"> San Martín, </h5>
-                            <h5 class="Dpto"> Santander</h5>
+                            <h5> San Martín, </h5>
+                            <h5 class="Dpto">  &nbsp; Santander</h5>
                         </div>
 
                     </div> 
@@ -322,23 +324,117 @@
               
             
               <div class="zoneBox2">
+
                 <div class="zoneTitle">
-                  <h3> Costa </h3>
-                  <ion-icon name="chevron-down-outline"></ion-icon>
-                </div>
+                    <h3> Costa </h3>
+                    <ion-icon name="chevron-down-outline" id="icono"></ion-icon>
+                  </div>
+                  <div class="zoneContent" id="contenido" style="display:block">
+  
+                      <div class="left-side">
+  
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Plato, </h5>
+                              <h5 class="Dpto">  &nbsp;Magdalena</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Roble, </h5>
+                              <h5 class="Dpto">  &nbsp;Sucre</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Pueblo Nuevo, </h5>
+                              <h5 class="Dpto">  &nbsp;Córdoba</h5>
+                          </div>
+      
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Tolú, </h5>
+                              <h5 class="Dpto">  &nbsp; Sucre</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Pivijay, </h5>
+                              <h5 class="Dpto">  &nbsp; Magdalena</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Sabana Larga, </h5>
+                              <h5 class="Dpto">  &nbsp; Antioquia</h5>
+                          </div>
+      
+                      </div>
+  
+                      <div class="right-side">
+  
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> San Pedro, </h5>
+                              <h5 class="Dpto">  &nbsp; Antioquia</h5>
+                          </div>
+                          
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Riohacha, </h5>
+                              <h5 class="Dpto">  &nbsp; La Guajira</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Cicuco,   </h5>
+                              <h5 class="Dpto">  &nbsp; Bolivar </h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Mompox, </h5>
+                              <h5 class="Dpto">  &nbsp; Bolívar</h5>
+                          </div>          
+                          
+                      </div> 
+                  
+
               </div>
             
               <div class="zoneBox3">
+
                 <div class="zoneTitle">
-                  <h3> Zona Llanos </h3>
-                  <ion-icon name="chevron-down-outline"></ion-icon>
-                </div>
+                    <h3> Zona Llanos </h3>
+                    <ion-icon name="chevron-down-outline" id="icono"></ion-icon>
+                  </div>
+                  <div class="zoneContent" id="contenido" style="display:block">
+  
+                      <div class="left-side">
+  
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Villavicencio, </h5>
+                              <h5 class="Dpto">  &nbsp;Meta</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Acacias, </h5>
+                              <h5 class="Dpto">  &nbsp;Meta</h5>
+                          </div>
+      
+                          <div class="city-info">
+                              <ion-icon name="location-outline" class="location-icon"></ion-icon>
+                              <h5> Puerto Gaitán, </h5>
+                              <h5 class="Dpto">  &nbsp;Córdoba</h5>
+                          </div>
+    
+                      </div>
               </div>
 
     </div>
-
-
-
       
     <a href="https://wa.me/+573212212121" class="whatsapp" target="_blank">
         <ion-icon name="logo-whatsapp" style="height: 50px; width: 50px; color: #FAFAFA;"></ion-icon>
