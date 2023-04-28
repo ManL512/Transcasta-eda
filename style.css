@@ -34,8 +34,8 @@
 .logo img {
     opacity: 1;
     max-width: 100%;
-    height: auto;
-    background-color: #E6ECEF;
+    height: 90px;
+    background-color: #FFFFFF
   }
 
 
@@ -52,14 +52,11 @@
   
 
 html {
-    top: 0px;
-    left: 0px;
-    width: 2080px;
-    height: 3526px;
+    width: auto;
+    height: auto;
     /* UI Properties */
     opacity: 1;
-    background: rgb(255,255,255);
-    background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(230,236,239,1) 100%);
+    background: transparent linear-gradient(247deg, #E6ECEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 }
 
 h1 {    
@@ -164,16 +161,6 @@ p {
     background-color: #FAFAFA;
     box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
     display: grid;
-    grid-template-columns: 1fr 4fr; /* Cambiado de "repeat(2, 1fr)" a "1fr 4fr" */
-    padding: 1rem 4rem;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.slider_content {
-    background-color: #FAFAFA;
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
-    display: grid;
     grid-template-columns: 40% 60%; /* establecemos una relación de 20-80 entre la descripción y la imagen */
     padding: 2rem 4rem;
     box-sizing: border-box;
@@ -188,7 +175,7 @@ p {
 }
 
 .slider_title {
-    margin-top: -100px;
+    margin-top: -120px;
     width: fit-content;
 }
 
@@ -267,6 +254,139 @@ p {
     opacity: 1;
 }
 
+.servicios_description{
+    overflow: hidden;
+    list-style-type: none;
+    text-align: left;
+    font: normal normal 300 25px/31px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+    text-indent: -20px;
+}
+
+.servicios_description li{
+    font-size: large;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.empresas-aliadas{
+    /* Layout Properties */
+    top: 1206px;
+    left: 80px;
+    width: 3336px;
+    height: 128px;
+    /* UI Properties */
+    opacity: 1;
+}
+
+.img-empresa{
+    height: 104px; 
+    width: 278px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    width: 1120px;/* ancho de todas las imágenes */
+    animation: slide 20s infinite; /* duración y número de repeticiones de la animación */
+}
+
+.slide {
+    width: 200px; /* ancho de cada imagen */
+    height: auto;
+    margin-right: 20px;
+    border: 2px solid #054965; 
+}
+
+.active {
+    /* clase por si acaso se necesita visualizar es la imagen activa */
+}
+
+.jump {
+    animation: jump 0.5s ease-out infinite alternate;
+}
+
+@keyframes jump {
+0% {
+transform: translateY(0);
+}
+100% {
+transform: translateY(-10px);
+}
+}
+
+@keyframes slide {
+0% {
+transform: translateX(0);
+}
+50% {
+transform: translateX(-700px); /* mitad del ancho total del slider */
+}
+100% {
+transform: translateX(-1000px); /* ancho total del slider */
+}
+}
+
+.informacion-de-interes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: auto;
+    height: 400px;
+    /* UI Properties */
+    background: #134A26 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.text-info-empresa{
+    /* Layout Properties */
+    width: 478px;
+    height: auto;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 18px/28px Lexend Deca;
+    letter-spacing: 0px;
+    color: #F5F5F7;
+    opacity: 1;
+    align-items: center;
+}
+.info_title{
+    width: 229px;
+    height: 23px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 18px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF; 
+}
+.info-box{
+    width: 177px;
+    height: 23px;
+    text-align: left;
+    font: normal normal bold 18px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.legality_seals{
+    width: 2080px;
+    height: 300px;
+    background: transparent linear-gradient(247deg, #E6ECEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.seal_img{
+    mix-blend-mode: darken;
+    opacity: 1;
+    height: 100px;
+}
 /*         *********** PAGINA DE TURISMO ***********         */
 
 .parragraph-tourism{

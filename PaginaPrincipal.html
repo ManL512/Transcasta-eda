@@ -43,160 +43,39 @@
 
 <body>
 
-    <script>
+<div class="main_content">
 
-            const icono = document.getElementById('icono');
-            const contenido = document.getElementById('contenido');
+    <div class="left_arrow"> < </div>
+    <div class="slider_content">
+        <div class="slider_description">
 
-            icono.addEventListener('click', () => {
-            if (contenido.style.display === 'none') {
-                contenido.style.display = 'block';
-            } else {
-                contenido.style.display = 'none';
-            }
-            });
+            <h2>Servicio</h2>
 
-
-    </script>
-
-    <style>
-
-        .servicios_description{
-            overflow: hidden;
-            list-style-type: none;
-            text-align: left;
-            font: normal normal 300 25px/31px Lexend Deca;
-            letter-spacing: 0px;
-            color: #105471;
-            opacity: 1;
-            text-indent: -20px;
-        }
-
-        .servicios_description li{
-            font-size: large;
-            text-align: left;
-            padding: 0;
-            margin: 0;
-        }
-
-        .empresas-aliadas{
-            /* Layout Properties */
-            top: 1206px;
-            left: 80px;
-            width: 3336px;
-            height: 128px;
-            /* UI Properties */
-            opacity: 1;
-        }
-
-        .img-empresa{
-            height: 104px; 
-            width: 278px;
-        }
-
-        .slider {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slide-container {
-  display: flex;
-  width: 2000px; /* ancho de todas las imágenes */
-  animation: slide 20s infinite; /* duración y número de repeticiones de la animación */
-}
-
-.slide {
-  width: 200px; /* ancho de cada imagen */
-  height: auto;
-  margin-right: 20px;
-  border: 2px solid #054965; 
-}
-
-.active {
-    /* clase por si acaso se necesita visualizar es la imagen activa */
-}
-
-.jump {
-  animation: jump 0.5s ease-out infinite alternate;
-}
-
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-700px); /* mitad del ancho total del slider */
-  }
-  100% {
-    transform: translateX(-1000px); /* ancho total del slider */
-  }
-}
-
-.informacion-de-interes{
-    width: 2080px;
-    height: 416px;
-    /* UI Properties */
-    background: #134A26 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-.text-info-empresa{
-    /* Layout Properties */
-    width: 478px;
-    height: 247px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 300 18px/28px Lexend Deca;
-    letter-spacing: 0px;
-    color: #F5F5F7;
-    opacity: 1;
-}
-
-
-    </style>
-
-    <div class="main_content">
-
-        <div class="left_arrow"> < </div>
-        <div class="slider_content">
-            <div class="slider_description">
-
-                <h2>Servicio</h2>
-
-                <div class="slider_title">
-                    <h1>Empresarial</h1>
-                    <div class="line_gradient" style= "display:grid;" >
-                        <div class="line_gradient_separation" style="   transform: rotate(180deg); width: 100px;"></div>
-                    </div>
+            <div class="slider_title">
+                <h1>Empresarial</h1>
+                <div class="line_gradient" style= "display:grid;" >
+                    <div class="line_gradient_separation" style="   transform: rotate(180deg); width: 100px;"></div>
                 </div>
-
-                <h2>Brindamos a empresas</h2>
-
-                <ul class="servicios_description">
-                    <li>&#10148; Traslado seguro de personal y colaboradores a donde se necesite</li>
-                    <br>
-                    <li>&#10148; Dentro y fuera de la ciudad a nivel nacional</li>
-                    <br>
-                    <li>&#10148; Servicios ajustados a las necesidades y presupuestos</li>
-                    
-                </ul>                
-                <a href="" class="primary_button">Saber más</a>
             </div>
-            <div class="slider_image">
-                <img src="1.png"> 
-            </div>
+
+            <h2 style="transform: translateY(-100px);">Brindamos a empresas:</h2>
+
+            <ul class="servicios_description" style="transform: translateY(-30px);">
+                <li>&#10148; Traslado seguro de personal y colaboradores a donde se necesite</li>
+                <br>
+                <li>&#10148; Dentro y fuera de la ciudad a nivel nacional</li>
+                <br>
+                <li>&#10148; Servicios ajustados a las necesidades y presupuestos</li>
+                
+            </ul>                
+            <a href="" class="primary_button">Saber más</a>
         </div>
-        <div class="right_arrow"> <a href="servicio-turismo.html" style="color: white;">  >  </a> </div>
+        <div class="slider_image">
+            <img src="1.png"> 
+        </div>
     </div>
+    <div class="right_arrow"> <a href="servicio-turismo.html" style="color: white;">  >  </a> </div>
+</div>
 
     <div class="advantages">
         <a href="">        
@@ -269,19 +148,35 @@
 
         <br>
 
-        <div class="informacion-de-interes" style="display: flex; justify-content: space-around;">
+        <div class="informacion-de-interes" style="display: flex; justify-content: space-evenly;">
 
-            <div class="info-empresa">
-                <h4>Nuestra Empresa</h4>
+            <div class="info-box" style="transform: translateX(-250px);">
+                <h2 class="info_title">Nuestra Empresa</h2>
+                <p class="text-info-empresa"> Transcastañeda es una empresa confiable, especializada en la prestación de servicios de transporte empresarial, escolar, turismo, salud, con más de 20 años de experiencia en esta modalidad de transporte, garantizando la movilización de sus empleados, para lo cual ofrecemos todos nuestros vehículos apropiados en excelentes condiciones de calidad, brindando cumplimiento, eficiencia, seguridad y seriedad a nuestros usuarios.</p>
+            </div>
+
+            <div class="info-box">
+                <h2 class="info_title">Enlaces rapidos</h2>
+                <p class="text-info-empresa"> PQR's </p>
+                <p class="text-info-empresa"> ¿Quiénes somos? </p>
+                <p class="text-info-empresa"> Términos y condiciones</p>
+                <p class="text-info-empresa"> Política de privacidad</p>
+                <p class="text-info-empresa"> Objetivo sistema integrado de gestión</p>
+            </div>
+
+            <div class="info-box">
+                <h2 class="info_title">Horario de atención</h2>
                 <p class="text-info-empresa"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur commodi adipisci dolores dolore eius pariatur voluptas quis optio dicta modi, odio ea molestias, laudantium ipsa exercitationem. Commodi, tempore magni.</p>
             </div>
+        </div>
 
-            <div class="info-enlaces">
-                <h2>Enlaces rapidos</h2>
-            </div>
-
-            <div class="info-horario">
-                <h2>Horario de atención</h2>
+        <div class="Legality_seals">
+            <img src="8.png"  class="seal_img">
+            <img src="10.png" class="seal_img">
+            <img src="11.png" class="seal_img">
+            <img src="12.png" class="seal_img">
+            <img src="13.png" class="seal_img">
+            <img src="14.png" class="seal_img">
             </div>
         </div>
 
