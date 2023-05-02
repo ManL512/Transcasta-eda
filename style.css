@@ -487,6 +487,19 @@ transform: translateX(-1000px); /* ancho total del slider */
     cursor: pointer;
 }
 
+.unfold{
+    font-size: 40px;
+    transform: translateX(-30px);
+}
+
+.text_parragraph{
+    text-align: left;
+    font: normal normal 300 25px/31px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+}
+
 .location-icon{
     width: 37px;
     height: 35px;
