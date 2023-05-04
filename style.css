@@ -4,6 +4,56 @@
 }
 
 
+/*         *********** PAGINA DE CONTACTO ***********         */
+.content{
+    transform: translateY(120px);
+}
+
+.contactanos_title{
+    display: flex;
+    height: 50px;
+    width: 1000px;
+}
+
+.contactanos_title h1{
+    color: #063C53;
+}
+
+.content_item{
+    display: flex; 
+    align-items: center;
+    width: 695px;
+    height: 121px;
+    background: #216A8A1A 0% 0% no-repeat padding-box;
+    border: 1px solid #216A8A;
+    border-radius: 62px;
+    opacity: 1;
+}
+
+.item_text{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 40px/50px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1; 
+}
+
+.item_sub_text{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 25px/31px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.icon{
+    width: 49px;
+    height: 49px;
+    opacity: 1;
+}
+
 /*         *********** PAGINA PRINCIPAL ***********         */
 .whatsapp {
     display: block;
@@ -123,10 +173,9 @@ p {
 }
 
 .slider_image img {
-    height: 700px;
+    height: 600px;
     position: absolute;
     left: -20%;
-    z-index: -1;
 }
 
 .left_arrow{
