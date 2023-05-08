@@ -19,6 +19,11 @@
     opacity: 1;
 }
 
+.right_side_box{
+    float: right;
+    transform: translateX(-20px);
+
+}
 .right_side_box h2{
 
     /* UI Properties */
