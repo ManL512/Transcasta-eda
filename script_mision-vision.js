@@ -106,14 +106,18 @@ if (icono.getAttribute("name") === "chevron-up-outline") {
 }   
 
 
-
 function mostrarContenidoZona_1() {
   var contenido = document.getElementById("contenido_Zona1");
   var icono = document.getElementById("icono");
 
-  if (contenido.style.height === "0px") {
-    contenido.style.height = "auto";
-    icono.setAttribute("name", "chevron-up-outline");
+function toggleZona1() {
+  var icono = document.getElementById("zona1-icono");
+  var zona = document.getElementById("zona1");
+
+  if (icono.getAttribute("name") === "chevron-down-outline") {
+      icono.setAttribute("name", "chevron-up-outline");
+      zona.style.display = "block";
+      zona.style.height = "350px";
   } else {
     contenido.style.height = "0px";
     icono.setAttribute("name", "chevron-down-outline");
@@ -145,3 +149,5 @@ function mostrarContenidoZona_3() {
     icono.setAttribute("name", "chevron-down-outline");
   }
 }
+
+

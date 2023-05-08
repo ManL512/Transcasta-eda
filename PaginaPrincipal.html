@@ -43,6 +43,35 @@
 
 <body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var currentImage = 0;
+            var numImages = $(".slider_image img").length;
+
+            function showNextImage() {
+            // Ocultar la imagen actual con una animación
+            $(".slider_image img").eq(currentImage).animate({opacity: 0}, 1000, function() {
+                    $(this).hide();
+                });
+
+                // Mostrar la siguiente imagen con una animación
+                currentImage = (currentImage + 1) % numImages;
+                $(".slider_image img").eq(currentImage).css({opacity: 0}).show().animate({opacity: 1}, 1000);
+            }
+
+            // Mostrar la primera imagen
+            $(".slider_image img").eq(0).show();
+
+            // Alternar las imágenes cada 3 segundos
+            setInterval(showNextImage, 3000);
+        });
+
+    </script>
+    
+
+      
     <!-- La pagina principal esta dividida en 6 secciones: 
     
     (1) -- contenido_principal
@@ -64,7 +93,7 @@
 
         <div class="main_content">
             <div class="left_arrow"> < </div>
-            <div class="slider_content">
+            <div class="slider_content active" id="slider_content_1">
                 <div class="slider_description" style="z-index: 1;">
                     <h2>Servicio</h2>
                     <div class="slider_title">
@@ -81,14 +110,41 @@
                     </ul>                
                     <a href="https://wa.me/+573212212121" class="primary_button" style="transform: translateY(-50px);"> Contactar</a>
                 </div>
+
                 <div class="slider_image">
-                    <img src="Empresarial/4.png" style="max-width: 100%;">
+                    <img src="Empresarial/1.png"  class="slider_img">
+                    <img src="Empresarial/2.png" style="display: none;" class="slider_img" >
+                    <img src="Empresarial/4.png" style="display: none;" class="slider_img">
+                    <img src="Empresarial/5.png" style="display: none;" class="slider_img">
                 </div>
                 
             </div>
+
             <div class="right_arrow"> <a href="Mision-vision.html" style="color: white;">  >  </a> </div>
-        </div>
+
+            <div class="slider_content2" id="slider_content_2" style="display: none;">
+                    <div class="slider_description">
         
+                        <h2>Servicio</h2>
+        
+                        <div class="slider_title">
+                            <h1>Turismo</h1>
+                            <div class="line_gradient" style= "display:grid;" >
+                                <div class="line_gradient_separation" style="   transform: rotate(180deg); width: 100px;"></div>
+                            </div>
+                        </div>
+        
+                        <p class="paragraph-tourism"> Contamos con vehículos para el transporte de servicio turístico, familiar y traslado a aeropuertos y más, que cumplen todos los protocolos de bioseguridad y con conductores profesionales.</p>              
+                        <a href="" class="primary_button">Saber más</a>
+                    </div>
+                    <div class="slider_image">
+                        <img src="Empresarial/3.png" style="left: -30%;"> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <!-- (2) ventajas -->
@@ -224,7 +280,9 @@
     <a href="https://wa.me/+573212212121" class="whatsapp" target="_blank">
         <ion-icon name="logo-whatsapp" style="height: 50px; width: 50px; color: #FAFAFA;"></ion-icon>
     </a>
-      
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>      
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </body>
