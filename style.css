@@ -76,7 +76,7 @@ html {
 
 .title_service {    
     /* UI Properties */
-    font-size: 5.8rem;
+    font-size: 4.8rem;
     font-weight: 900;
     text-align: left;
     /*font: normal normal bold 105px/150px Lexend Deca;*/
@@ -502,16 +502,11 @@ transform: translateX(-1000px); /* ancho total del slider */
 }
 
 .zoneBox1{
-    /* Layout Properties */
-    width: 1925px;
-    height: 773px;
-    /* UI Properties */
+    max-width: 100%;
     opacity: 1;
 }
 
 .zoneContent{
-    /* Layout Properties */
-    width: 1699px;
     height: auto;
     /* UI Properties */
     opacity: 1;
@@ -520,9 +515,9 @@ transform: translateX(-1000px); /* ancho total del slider */
 
 
 .zoneTitle{
+    max-width: 100%;
     background: #b0b6b95d 0% 0% no-repeat padding-box;
     opacity: 1;
-    width: 1900px;
     height: 123px;
     display: flex;
     justify-content: space-between;
