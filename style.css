@@ -87,17 +87,6 @@ html {
     opacity: 1;
 }
 
-.h2{
-    /* UI Properties */
-    text-align: left;
-    font: normal normal normal 20px/28px Lexend Deca;
-    letter-spacing: 0px;
-    color: #105471;
-    opacity: 1;
-}
-
-
-
 p {
     font-size: 2rem;
 }
@@ -187,7 +176,7 @@ p {
     padding: 1.8rem 4rem;
     box-sizing: border-box;
     position: relative;
-    height: 650px; /* ESTILO A CAMBIAR DEPENDIENDO DE LA PANTALLA*/
+    height: auto; /* ESTILO A CAMBIAR DEPENDIENDO DE LA PANTALLA*/
 }
 
 .slider_description {
@@ -201,7 +190,7 @@ p {
 }
 
 .slider_title {
-    margin-top: -120px;
+    margin-top: -80px;
     width: fit-content;
 }
 
@@ -445,15 +434,14 @@ transform: translateX(-1000px); /* ancho total del slider */
 /*         *********** PAGINA DE TURISMO ***********         */
 
 .parragraph-tourism{
-    top: 424px;
-    left: 144px;
-    width: 587px;
+    width: 400px;
     height: 266px;
     text-align: left;
     font: normal normal 300 30px/38px Lexend Deca;
     letter-spacing: 0px;
     color: #105471;
     opacity: 1;
+    transform: translateY(-60px);
 }
 
 /*         *********** PAGINA NOSOTROS ***********         */
