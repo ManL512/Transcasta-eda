@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style_contactPage.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contactanos</title>
 </head>
 
@@ -25,9 +28,28 @@
 </header>
 <body>
 
-    <div class="content_box" style="height: auto; max-width: 100%;">
+    <!-- La pagina de contacto esta dividida en 6 secciones: 
+    
+    (1) -- numeros de contacto - servicio al cliente
+
+    (2) -- numeros de contacto - solicitud de servicios
+
+    (3) -- clientes
+
+    (4) -- informacion
+
+    (5) -- legalidad
+
+    (6) -- derechos_reservados
+    
+    -->
+
+
+
+    <div class="content_box" style="height: 800px; max-width: 100%;">
 
         <div class="content" style="display: block;" >
+            <!-- (1) servicio al cliente-->
             <section class="left_side">
                 <div class="left_side_box" style="float: left; transform: translateX(60px);">
                     <h2>Servicio al cliente</h2>
@@ -63,7 +85,7 @@
                 </div>
             </section>
             
-
+            <!-- (2) solicitud de servicios-->
             <section class="right_side" >
                 <div class="right_side_box">
                     <h2>Cotizaciones o solicitud de servicios</h2>
@@ -103,6 +125,86 @@
 
 
     </div>
+
+    <!-- (3) clientes-->
+    <section class="clientes">
+
+        <div class="Nuestros_clientes" style="font-size: 48px; height: 300px;" id="social-responsability">
+            <h2> Nuestros clientes </h2>
+    
+            <div class="empresas-aliadas">
+    
+                <div class="slider">
+                    <div class="slide-container">
+                      <img src="Sellos/essa.png" class="slide active">
+                      <img src="Sellos/halliburton.png" class="slide active jump">
+                      <img src="Sellos/holiday inn.png" class="slide">
+                      <img src="Sellos/hospital_universitario.png" class="slide">
+                      <img src="Sellos/igenieros.png" class="slide active jump">
+                      <img src="Sellos/motal.png" class="slide">
+                      <img src="Sellos/petrotiger.png" class="slide">
+                      <img src="Sellos/saxon.png" class="slide">
+                      <img src="Sellos/schlumbeger.png" class="slide active jump">
+                      <img src="Sellos/solar.png" class="slide">
+                      <img src="Sellos/uis.png" class="slide active jump">
+                    </div>
+                  </div>
+                
+            </div>
+
+            <br>
+    </section>
+    
+    <!-- (4) informacion-->
+    <section class="informacion">
+
+        <div class="informacion-de-interes" style="display: flex; justify-content: space-evenly;">
+
+            <div class="info-box">
+                <h2 class="info_title">Nuestra Empresa</h2>
+                <p class="text-info-empresa"> Transcastañeda es una empresa confiable, especializada en la prestación de servicios de transporte empresarial, escolar, turismo, salud, con más de 20 años de experiencia en esta modalidad de transporte, garantizando la movilización de sus empleados, para lo cual ofrecemos todos nuestros vehículos apropiados en excelentes condiciones de calidad, brindando cumplimiento, eficiencia, seguridad y seriedad a nuestros usuarios.</p>
+            </div>
+
+            <div class="info-box">
+                <h2 class="info_title">Enlaces rapidos</h2>
+                <p class="text-info-empresa"> PQR's </p>
+                <p class="text-info-empresa"> ¿Quiénes somos? </p>
+                <p class="text-info-empresa"> Términos y condiciones</p>
+                <p class="text-info-empresa"> Política de privacidad</p>
+                <p class="text-info-empresa"> Objetivo sistema integrado de gestión</p>
+            </div>
+
+            <div class="info-box">
+                <h2 class="info_title">Horario de atención</h2>
+                <p class="text-info-empresa"> Lunes a viernes: 7:30 a.m. - 5:00 p.m.</p>
+                <p class="text-info-empresa"> Sabados: 8:00 a.m. - 11:30 a.m.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- (5) legalidad-->
+    <section class="legalidad">
+        
+        <div class="Legality_seals">
+        
+            <img src="Sellos/8.png"  class="seal_img">
+            <img src="Sellos/10.png" class="seal_img">
+            <img src="Sellos/11.png" class="seal_img">
+            <img src="Sellos/12.png" class="seal_img">
+            <img src="Sellos/13.png" class="seal_img">
+            <img src="Sellos/14.png" class="seal_img">
+
+        </div>
+
+    </section>
+    
+     <!-- (6) derechos_reservados-->
+    <section class="derechos_reservados">
+        <div class="rights_reserved">
+            <p class="text_rights" style="font-size: 14px;">© 2023 TRANSCASTAÑEDA | TODOS LOS DERECHOS RESERVADOS</p> 
+        </div>
+    </section>
+     
 
 
 
