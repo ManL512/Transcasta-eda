@@ -1,0 +1,158 @@
+* {
+    font-family: 'Lexend Deca';
+    color: #063C53;
+
+}
+
+.html{
+    background: transparent linear-gradient(258deg, #E6ECEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.left_side_box h2{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 40px/50px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.right_side_box h2{
+
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 40px/50px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.content_box {
+    height: auto;
+    width: 100%;
+    max-width: 100%; /* set a maximum width to prevent the box from getting too wide */
+}
+
+.volver {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+  
+  .volver ion-icon {
+    color: #063C53;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+  
+.contactanos_title h2{
+    width: 806px;
+    height: 100px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 80px/100px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.content{
+    transform: translateY(120px);
+}
+
+.contactanos_title{
+    display: flex;
+    height: 50px;
+    width: 1000px;
+}
+
+.contactanos_title h1{
+    color: #063C53;
+}
+
+.content_item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente las columnas */
+    width: 600px;
+    height: 121px;
+    background: #216A8A1A 0% 0% no-repeat padding-box;
+    border: 1px solid #216A8A;
+    border-radius: 62px;
+    overflow: hidden;
+    position: relative; /* Posición relativa para los elementos hijos */
+}
+
+.content_item {
+    position: relative; /* Asegurarse de que el contenedor tenga posición relativa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 121px;
+    background: #216A8A1A 0% 0% no-repeat padding-box;
+    border: 1px solid #216A8A;
+    border-radius: 62px;
+    overflow: hidden;
+    padding-left: 60px; /* Agregar padding-left */
+  }
+
+  .content_item:hover {
+    transform: scale(1.05); /* Hace que la caja se agrande un 5% al hacer hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+    background-color: #FFF; /* Cambia el color de fondo a blanco */
+    color: #216A8A; /* Cambia el color del texto a un azul oscuro */
+    transition: all 0.3s ease; /* Hace que la transición sea suave */
+  }
+  
+.column {
+    padding: 10px;
+    text-align: center;
+}
+
+.column1,
+.column3 {
+    flex-basis: 15%;
+}
+
+.column2 {
+    flex-basis: 70%;
+    margin: 0 auto; /* Ajustar el margen horizontal */
+}
+
+@media screen and (min-width: 700px) {
+    .column2 {
+        margin-left: calc((100% - 600px) / 2); /* Ajustar el margen izquierdo */
+    }
+}
+
+
+.item_text h2{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 40px/50px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.item_sub_text h3{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 25px/31px Readex Pro Deca;
+    letter-spacing: 0px;
+    color: #063C53;
+    opacity: 1;
+}
+
+.icon{
+    color: #063C53;
+    width: 49px;
+    height: 49px;
+    opacity: 1;
+}
+
