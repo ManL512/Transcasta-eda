@@ -5,6 +5,8 @@
 }
 
 /*         *********** PAGINA PRINCIPAL ***********         */
+
+
 .ventajas{
     max-width: 100%;
 }
@@ -122,14 +124,12 @@ p {
 }
 
 .main_content {
-    transform: translateX(-10px);
     /* UI Properties */
     background: #FAFAFA 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     display: grid;
     grid-template-columns: 5vw 90vw 5vw;
-    ;
     align-items: center;
 }
 .slider_image{
@@ -140,11 +140,12 @@ p {
     position: relative;
 }
 
-.slider_image img {
+.slider_img {
     height: 100%;
     width: 100%;
     position: relative;
     z-index: -1;
+    
 }
 
 .left_arrow{
