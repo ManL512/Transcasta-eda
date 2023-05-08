@@ -106,48 +106,43 @@ if (icono.getAttribute("name") === "chevron-up-outline") {
 }   
 
 
+function mostrarContenidoZona_1() {
+  var contenido = document.getElementById("contenido_Zona1");
+  var icono = document.getElementById("icono");
 
-function toggleZona1() {
-  var icono = document.getElementById("zona1-icono");
-  var zona = document.getElementById("zona1");
-
-  if (icono.getAttribute("name") === "chevron-down-outline") {
-      icono.setAttribute("name", "chevron-up-outline");
-      zona.style.display = "block";
-      zona.style.height = "350px";
+  if (contenido.style.height === "0px") {
+    contenido.style.height = "auto";
+    icono.setAttribute("name", "chevron-up-outline");
   } else {
-      icono.setAttribute("name", "chevron-down-outline");
-      zona.style.display = "none";
-      zona.style.height = "0";
+    contenido.style.height = "0px";
+    icono.setAttribute("name", "chevron-down-outline");
   }
 }
 
-function toggleZona2() {
-  var icono = document.getElementById("zona2-icono");
-  var zona = document.getElementById("zona2");
+function mostrarContenidoZona_2() {
+  var contenido = document.getElementById("contenido_Zona2");
+  var icono = document.getElementById("icono");
 
-  if (icono.getAttribute("name") === "chevron-down-outline") {
-      icono.setAttribute("name", "chevron-up-outline");
-      zona.style.display = "block";
-      zona.style.height = "350px";
+  if (contenido.style.height === "0px") {
+    contenido.style.height = "auto";
+    icono.setAttribute("name", "chevron-up-outline");
   } else {
-      icono.setAttribute("name", "chevron-down-outline");
-      zona.style.display = "none";
-      zona.style.height = "0";
+    contenido.style.height = "0px";
+    icono.setAttribute("name", "chevron-down-outline");
   }
 }
 
-function toggleZona3() {
-  var icono = document.getElementById("zona3-icono");
-  var zona = document.getElementById("zona3");
+function mostrarContenidoZona_3() {
+  var contenido = document.getElementById("contenido_Zona3");
+  var icono = document.getElementById("icono");
 
-  if (icono.getAttribute("name") === "chevron-down-outline") {
-      icono.setAttribute("name", "chevron-up-outline");
-      zona.style.display = "block";
-      zona.style.height = "350px";
+  if (contenido.style.height === "0px") {
+    contenido.style.height = "auto";
+    icono.setAttribute("name", "chevron-up-outline");
   } else {
-      icono.setAttribute("name", "chevron-down-outline");
-      zona.style.display = "none";
-      zona.style.height = "0";
+    contenido.style.height = "0px";
+    icono.setAttribute("name", "chevron-down-outline");
   }
 }
+
+
