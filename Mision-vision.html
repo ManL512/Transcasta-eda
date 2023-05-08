@@ -69,49 +69,7 @@
     (4) -- politicas
     
     -->
-    <script>
-
-
-        function mostrarContenidoZona_1() {
-          var contenido = document.getElementById("contenido_Zona1");
-          var icono = document.getElementById("icono");
-        
-          if (contenido.style.height === "0px") {
-            contenido.style.height = "auto";
-            icono.setAttribute("name", "chevron-up-outline");
-          } else {
-            contenido.style.height = "0px";
-            icono.setAttribute("name", "chevron-down-outline");
-          }
-        }
-
-        function mostrarContenidoZona_2() {
-          var contenido = document.getElementById("contenido_Zona2");
-          var icono = document.getElementById("icono");
-        
-          if (contenido.style.height === "0px") {
-            contenido.style.height = "auto";
-            icono.setAttribute("name", "chevron-up-outline");
-          } else {
-            contenido.style.height = "0px";
-            icono.setAttribute("name", "chevron-down-outline");
-          }
-        }
-
-        function mostrarContenidoZona_3() {
-          var contenido = document.getElementById("contenido_Zona3");
-          var icono = document.getElementById("icono");
-        
-          if (contenido.style.height === "0px") {
-            contenido.style.height = "auto";
-            icono.setAttribute("name", "chevron-up-outline");
-          } else {
-            contenido.style.height = "0px";
-            icono.setAttribute("name", "chevron-down-outline");
-          }
-        }
-
-    </script>
++
 
 
 
@@ -240,7 +198,7 @@
                 <div class="zoneBox1">
                     <div class="zoneTitle">
                       <h3> Magdalena Medio </h3>
-                      <ion-icon name="chevron-down-outline" id="icono" onclick="mostrarContenidoZona_1()"></ion-icon>
+                      <ion-icon name="chevron-down-outline" class="unfold" id="icono" onclick="mostrarContenidoZona_1()"></ion-icon>
                     </div>
     
                     <div class="zoneContent" id="contenido_Zona1" style="height: 0;">
@@ -331,7 +289,7 @@
     
                     <div class="zoneTitle">
                         <h3> Costa </h3>
-                        <ion-icon name="chevron-down-outline" id="icono" onclick="mostrarContenidoZona_2()"></ion-icon>
+                        <ion-icon name="chevron-down-outline" class="unfold" id="icono" onclick="mostrarContenidoZona_2()"></ion-icon>
                       </div>
                       <div class="zoneContent" id="contenido_Zona2" style="height:0px;overflow:hidden;">
                         ...
@@ -414,7 +372,7 @@
     
                     <div class="zoneTitle">
                             <h3> Zona Llanos </h3>
-                            <ion-icon name="chevron-down-outline" id="icono" onclick="mostrarContenidoZona_3()"></ion-icon>
+                            <ion-icon name="chevron-down-outline" class="unfold" id="icono" onclick="mostrarContenidoZona_3()"></ion-icon>
                     </div>
     
                     <div class="zoneContent" id="contenido_Zona3" style="height:0px;overflow:hidden;">
