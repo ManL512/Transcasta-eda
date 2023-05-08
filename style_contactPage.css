@@ -47,14 +47,13 @@
     font-size: 24px;
     cursor: pointer;
 }
-  
+
   
 .contactanos_title h2{
     width: 806px;
     height: 100px;
-    /* UI Properties */
     text-align: left;
-    font: normal normal bold 80px/100px Readex Pro Deca;
+    font: normal normal bolder 80px/100px Readex Pro Deca;
     letter-spacing: 0px;
     color: #063C53;
     opacity: 1;
