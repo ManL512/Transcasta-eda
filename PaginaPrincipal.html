@@ -63,14 +63,32 @@
     <script>
         var sliderIndex = 0;
         var sliders = document.getElementsByClassName("slider_description");
-
+        var sliderImages = document.getElementsByClassName("slider_img");
+      
         setInterval(function() {
-        sliders[sliderIndex].style.display = "none";
-        sliderIndex = (sliderIndex + 1) % sliders.length;
-        sliders[sliderIndex].style.display = "block";
+          // Ocultar la descripción del slider actual
+          sliders[sliderIndex].style.display = "none";
+
+          // Ocultar la imagen del slider actual
+          sliderImages[sliderIndex].style.display = "none";
+
+          // Actualizar el índice del slider
+          sliderIndex = (sliderIndex + 1) % sliders.length;
+
+          // Mostrar la descripción del nuevo slider
+          sliders[sliderIndex].style.display = "block";
+
+          // Si el nuevo slider es el segundo, mostrar la imagen
+          if (sliderIndex == 1) {
+            sliderImages[0].style.display = "none";
+            sliderImages[1].style.display = "block";
+          } else {
+            sliderImages[sliderIndex].style.display = "none";
+          }
+
         }, 20000);
 
-    </script>
+      </script>
 
     <!-- (1) contenido principal -->
     <section class="contenido_principal">
@@ -113,10 +131,11 @@
                       </div>
                       
 
-                    <div class="slider_image">
-                        <img src="Empresarial/empresarial_gif.gif"  class="slider_img">
-                    </div>
-                    
+                      <div class="slider_image">
+                        <img src="Empresarial/empresarial_gif.gif" class="slider_img">
+                        <img src="Turismo/turismo_gif.gif" alt="" style="display: none;" class="slider_img slider_img-2">
+                      </div>
+                      
                 </div>
                 
 
