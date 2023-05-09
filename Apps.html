@@ -75,6 +75,7 @@
         height: 150px;
     }
     .playStore_content{
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -87,13 +88,27 @@
     }
 
     .playStore_descargala{
+        border-radius: 3%;
+        box-sizing: border-box; 
+        display: flex; 
+        align-items: center;
         /* Layout Properties */
         width: 328px;
         height: 93px;
         /* UI Properties */
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 3px 20px #00000029;
-        opacity: 1
+    }
+
+    .playStore_descargala p{
+        width: 125px;
+        height: 25px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal normal 20px/14px Lexend Deca;
+        letter-spacing: 0px;
+        color: #105471;
+        opacity: 1;
     }
 
     .rastreo_digital {
@@ -194,23 +209,19 @@
 </section>
    
 <section class="playStore" style="max-width: 100%;">
-    <div class="playStore_content">
-        <div class="playStore_descargala">
-            <!--
-            <div class="icono">
-                <img src="Sellos/play_store_icon.png" alt="">
+    <div class="playStore_content" style="float: right;">
+        <div class="playStore_descargala" style="box-sizing: border-box; display: flex; align-items: center;">
+            <div style="flex: 1;">
+              <img src="Sellos/play_store_icon.png" alt="" style="height: 40px;">
             </div>
-
-            <div class="texto">
-                <p>Descarga en</p>
-                <p> Play Store </p>
+            <div class="texto" style="flex: 1.5;">
+              <p>Descarga en</p>
+              <p style="margin: 0%;"> <b> Play Store </b></p>
             </div>
-
-            <div class="trazado">
-                <img src="Sellos/Trazado 8984.png" alt="">
+            <div class="trazado" style="flex: 0.5;">
+              <img src="Sellos/Trazado 8984.png" alt="">
             </div>
-            -->
-        </div>
+          </div>
     </div>
 </section>
 
@@ -251,22 +262,18 @@
 
 <section class="playStore" style="max-width: 100%;">
     <div class="playStore_content" style="float: left;">
-        <div class="playStore_descargala">
-            <!--
-            <div class="icono">
-                <img src="Sellos/play_store_icon.png" alt="">
+        <div class="playStore_descargala" style="box-sizing: border-box; display: flex; align-items: center;">
+            <div style="flex: 1;">
+              <img src="Sellos/play_store_icon.png" alt="" style="height: 40px;">
             </div>
-
-            <div class="texto">
-                <p>Descarga en</p>
-                <p> Play Store </p>
+            <div class="texto" style="flex: 1.5;">
+              <p>Descarga en</p>
+              <p style="margin: 0%;"> <b> Play Store </b></p>
             </div>
-
-            <div class="trazado">
-                <img src="Sellos/Trazado 8984.png" alt="">
+            <div class="trazado" style="flex: 0.5;">
+              <img src="Sellos/Trazado 8984.png" alt="">
             </div>
-            -->
-        </div>
+          </div>
     </div>
 </section>
 
