@@ -18,15 +18,15 @@
 
     <div class="menu">
         <!-- LOGO -->
-        <div class="logo"> <img src="Enmascarar grupo 2.png" alt="Logo-Transcastañeda"></div>
+        <div class="logo"> <img src="Sellos/logo_transcastaneda.png" alt="Logo-Transcastañeda"></div>
         <!-- BARRA NAV -->
         <div>
-            <ul class="menu_items">
-                <li class="shaded">Servicios</li>
-                <li class="shaded">Nosotros</li>
-                <li>Apps y tecnología</li>
-                <li class="shaded">Sedes</li>
-                <li class="shaded">Login</li>
+            <ul class="menu_items" style="text-decoration: none;">
+                <li class="shaded"> <a href="PaginaPrincipal.html">Servicios</a></li>
+                <li class="shaded"> <a href="Mision-vision.html">Nosotros</a></li>
+                <li>  Apps y tecnología </li>
+                <li class="shaded"> <a href="Sedes.html">Sedes</a></li>
+                <li class="shaded"> <a href="">Login</a></li>
             </ul>
         </div>
         <!-- REDES SOCIALES -->
@@ -35,7 +35,7 @@
             <ion-icon name="logo-instagram"></ion-icon>
         </div>
         <!-- BOTON DE CONTACTO -->
-        <button class="primary_button" onclick="location.href='Contactanos.html'">Contactanos</button> 
+        <a href="Contactanos.html" class="primary_button"> Contactanos </a>
 
     </div>
 
@@ -43,30 +43,21 @@
 
 <body>
 
-    <style>
-        .slider_title{
-            
-        }
-
-        .slider_title h1{
-            font-size: 100px;
-            
-        }
-    </style>
-
-    <div id="turismo" class="main_content">
+<section class="contenido_principal">
+    <div class="main_content">
 
         <div class="left_arrow"> < </div>
-        <div class="slider_content">
+        <div class="slider_content_app">
             <div class="slider_description">
 
-                <h2>App</h2>
+                <P>App</P>
+
+                <br>
 
                 <div class="slider_title">
-                    <h1>HICAR servicios</h1>
-                
+                    <p class="app_name"> HICAR</p>
                 </div>
-                <p class="paragraph-apps"> Diseñada para conocer toda la información relacionada a los servicios prestados por la empresa como rutas, personal a transportar, información del conductor e información del vehículo.</p>              
+                <p class="app_description"> Diseñada para conocer toda la información relacionada a los servicios prestados por la empresa como <b> rutas, personal a transportar, información del conductor e información del vehículo. </b> </p> 
 
             </div>
             <div class="slider_image">
@@ -75,6 +66,8 @@
         </div>
         <div class="right_arrow"> > </div>
     </div>
+</section>
+   
     
 </body>
 </html>
