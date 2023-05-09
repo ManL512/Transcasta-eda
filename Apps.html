@@ -43,31 +43,241 @@
 
 <body>
 
-<section class="contenido_principal">
-    <div class="main_content">
+<style>
+    .slider_title{
+        width: 753px;
+        height: min-content;
+        /* UI Properties */
+        background: #054965 0% 0% no-repeat padding-box;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .app_name{
+        width: 1000px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 80px/0% Lexend Deca;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .text_p_app{
+        width: 96px;
+        height: 63px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #105471;
+        opacity: 1;
+    }
+    .playStore{
+        height: 150px;
+    }
+    .playStore_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 113px;
+        /* UI Properties */
+        background: #054965 0% 0% no-repeat padding-box;
+        opacity: 1;
+        float: right;
+    }
+
+    .playStore_descargala{
+        /* Layout Properties */
+        width: 328px;
+        height: 93px;
+        /* UI Properties */
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 20px #00000029;
+        opacity: 1
+    }
+
+    .rastreo_digital {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: transparent linear-gradient(127deg, #105471 0%, #246A88 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .rastreo_left_content {
+        float: left;
+        background: transparent url('Sellos/Satelite.png') 0% 0% no-repeat padding-box;
+        mix-blend-mode: luminosity;
+        grid-column: 1 / 2;
+    }
+
+    .rastreo_left_content p{
+        color: #FFFFFF;
+    }
+
+    .rastreo_right_content {
+        grid-column: 2 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rastreo_right_content p{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font: normal normal 300 40px/50px Lexend Deca;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .satelital_title{
+        width: 493px;
+        height: 300px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 120px/150px Lexend Deca;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 6px #063C53;
+        opacity: 1;
+    }
+</style>
+
+
+    <!-- La pagina principal esta dividida en 6 secciones: 
+    
+    (1) -- contenido_principal
+
+    (2) -- descargala en play store
+
+    (3) -- clientes
+
+    (4) -- informacion
+
+    (5) -- legalidad
+
+    (6) -- derechos_reservados
+    
+    -->
+
+<!-- (1) HICAR -->
+<section class="Introduccion">
+    <div class="main_content" style="    grid-template-columns: 5vw 90vw 0vw;">
 
         <div class="left_arrow"> < </div>
         <div class="slider_content_app">
             <div class="slider_description">
 
-                <P>App</P>
-
-                <br>
-
+                <P class="text_p_app">App</P>
                 <div class="slider_title">
-                    <p class="app_name"> HICAR</p>
+
+                    <p class="app_name"> HICAR servicios</p>  
+
+                    <div class="line_gradient" style="display: contents;">
+                        <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px; transform: translateX(600px);"></div>
+                    </div>
                 </div>
+
                 <p class="app_description"> Diseñada para conocer toda la información relacionada a los servicios prestados por la empresa como <b> rutas, personal a transportar, información del conductor e información del vehículo. </b> </p> 
+
 
             </div>
             <div class="slider_image">
-                <img src="mercedes.png" style="left: -10%;"> 
+                <img src="hicar/app_slider.gif" style="height: 40rem;"> 
             </div>
         </div>
+        
         <div class="right_arrow"> > </div>
     </div>
 </section>
    
-    
+<section class="playStore" style="max-width: 100%;">
+    <div class="playStore_content">
+        <div class="playStore_descargala">
+            <!--
+            <div class="icono">
+                <img src="Sellos/play_store_icon.png" alt="">
+            </div>
+
+            <div class="texto">
+                <p>Descarga en</p>
+                <p> Play Store </p>
+            </div>
+
+            <div class="trazado">
+                <img src="Sellos/Trazado 8984.png" alt="">
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+<section class="App HICAR">
+    <div class="main_content" style="    grid-template-columns: 5vw 90vw 0vw;">
+
+        <div class="left_arrow"> < </div>
+        <div class="slider_content_app" style="grid-template-columns: 40% 60%;">
+
+            <div class="slider_image">
+                <img src="hicar/app_slider.gif" style="height: 40rem;"> 
+            </div>
+
+            <div class="slider_description">
+
+                <P class="text_p_app">App</P>
+                <div class="slider_title" style="width:20rem">
+
+                    <p class="app_name"> HICAR </p>  
+
+                    <div class="line_gradient" style="display: contents;">
+                        <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px; transform: translateX(600px);"></div>
+                    </div>
+                </div>
+
+                <p class="app_description"> Aplicación diseñada para el control y seguridad de nuestro vehículo diariamente cumpliendo con las <b> REVISIONES PREOPERACIONALES </b> </p> 
+
+
+            </div>
+        </div>
+        
+        <div class="right_arrow"> > </div>
+    </div>
+</section>
+
+<section class="playStore" style="max-width: 100%;">
+    <div class="playStore_content" style="float: left;">
+        <div class="playStore_descargala">
+            <!--
+            <div class="icono">
+                <img src="Sellos/play_store_icon.png" alt="">
+            </div>
+
+            <div class="texto">
+                <p>Descarga en</p>
+                <p> Play Store </p>
+            </div>
+
+            <div class="trazado">
+                <img src="Sellos/Trazado 8984.png" alt="">
+            </div>
+            -->
+        </div>
+    </div>
+</section>
+
+<section class="rastreo_digital" style="max-width: 100%;">
+    <div class="rastreo_left_content">
+        <p class="satelital_title"> Rastreo satelital</p>
+    </div>
+
+    <div class="rastreo_right_content">
+        <p> Trabajamos de la mano con el proveedor satelital rastreando cualquier tipo de vehículo que nos ayudan obtener información de la geolocalización y hacer seguimiento en tiempo real de la operación de los vehículos brindando informes según la necesidad del cliente.</p>
+    </div>
+</section>
 </body>
 </html>
