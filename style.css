@@ -122,7 +122,7 @@ p {
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     display: grid;
-    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-columns: 5vw 90vw 0vw;
     align-items: center;
 }
 
