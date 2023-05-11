@@ -71,93 +71,115 @@
         color: #105471;
         opacity: 1;
     }
-    .playStore{
-        height: 150px;
-    }
-    .playStore_content{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 600px;
-        height: 113px;
-        /* UI Properties */
-        background: #054965 0% 0% no-repeat padding-box;
-        opacity: 1;
-        float: right;
+        .playStore {
+        height: 4rem;
+        padding: 20px;
     }
 
-    .playStore_descargala{
-        border-radius: 3%;
-        box-sizing: border-box; 
-        display: flex; 
-        align-items: center;
-        /* Layout Properties */
-        width: 328px;
-        height: 93px;
-        /* UI Properties */
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 3px 20px #00000029;
+    .playStore_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    background: #054965;
     }
 
-    .playStore_descargala p{
-        width: 125px;
-        height: 25px;
-        /* UI Properties */
-        text-align: left;
-        font: normal normal normal 20px/14px Lexend Deca;
-        letter-spacing: 0px;
-        color: #105471;
-        opacity: 1;
+    .playStore_descargala {
+    display: flex;
+    align-items: center;
+    max-width: 328px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 20px #00000029;
+    padding: 10px;
+    border-radius: 3%;
     }
+
+    .playStore_descargala p {
+    width: auto;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    }
+
 
     .rastreo_digital {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        background: transparent linear-gradient(127deg, #105471 0%, #246A88 100%) 0% 0% no-repeat padding-box;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: transparent linear-gradient(127deg, #105471 0%, #246A88 100%) 0% 0% no-repeat padding-box;
+}
 
-    .rastreo_left_content {
-        float: left;
-        background: transparent url('Sellos/Satelite.png') 0% 0% no-repeat padding-box;
-        mix-blend-mode: luminosity;
-        grid-column: 1 / 2;
-    }
+.rastreo_left_content {
+  width: 100%;
+  text-align: center;
+  background: transparent url('Sellos/Satelite.png') 0% 0% no-repeat padding-box;
+  mix-blend-mode: luminosity;
+  grid-column: 1 / 2;
+}
 
-    .rastreo_left_content p{
-        color: #FFFFFF;
-    }
+.rastreo_left_content p {
+  color: #FFFFFF;
+  font: normal normal bold 60px/75px Lexend Deca;
+  letter-spacing: 0px;
+}
 
-    .rastreo_right_content {
-        grid-column: 2 / 3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.rastreo_right_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    .rastreo_right_content p{
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-        font: normal normal 300 40px/50px Lexend Deca;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-    }
+.rastreo_right_content p {
+  text-align: center;
+  font: normal normal 300 24px/30px Lexend Deca;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
 
-    .satelital_title{
-        width: 493px;
-        height: 300px;
-        /* UI Properties */
-        text-align: left;
-        font: normal normal bold 120px/150px Lexend Deca;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-shadow: 0px 3px 6px #063C53;
-        opacity: 1;
-    }
+@media only screen and (min-width: 768px) {
+  .rastreo_digital {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .rastreo_left_content {
+    width: 100%;
+    text-align: left;
+    background-position: center;
+    mix-blend-mode: normal;
+    grid-column: 1 / 2;
+  }
+  
+  .rastreo_left_content p {
+    font: normal normal bold 120px/150px Lexend Deca;
+    letter-spacing: 0px;
+  }
+  
+  .rastreo_right_content {
+    width: 100%;
+    padding: 0 0%;
+    box-sizing: border-box;
+  }
+  
+  .rastreo_right_content p {
+    text-align: left;
+    font: normal normal 300 40px/50px Lexend Deca;
+    letter-spacing: 0px;
+  }
+}
+
 </style>
 
 
