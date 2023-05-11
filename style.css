@@ -1,7 +1,6 @@
 * {
     font-family: 'Lexend Deca';
     color: #063C53;
-
 }
 
 /*         *********** PAGINA PRINCIPAL ***********         */
@@ -21,6 +20,10 @@
 
 .legalidad{
     padding: 50px 0;
+}
+
+.sedes_nacionales{
+    max-width: 100%;
 }
 
 .whatsapp {
