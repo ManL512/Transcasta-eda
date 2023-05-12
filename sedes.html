@@ -64,72 +64,254 @@
     opacity: 1;
 }
 
-.sede{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 904px;
-    height: 188px;
+.sede_location {
+  display: flex;
+  flex-direction: row;
+}
+
+.sede {
+    width: 800px;
+    height: 200px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #D1DCDF;
     border-radius: 5px;
     opacity: 1;
+    overflow: auto;
 }
 
 .sede_content {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.number{
-    width: 36px;
-    height: 36px;
-    background: #2F6943 0% 0% no-repeat padding-box;
-    opacity: 1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+.sede_content {
     align-items: center;
 }
 
+.number {
+  width: 10%;
+}
+
 .number p{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* UI Properties */
+    background: #2F6943 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-radius: 50%;
+    opacity: 1;
+}
+.sede_details {
+    width: 60%;
+    height: auto;
+}
+
+.sede_details_city{
+    text-align: left;
+    font: normal normal normal 35px/44px Lexend Deca;
+    height: 1rem;
+    color: #105471;
+    opacity: 1;
+}
+
+.sede_details_info{
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 300 25px/31px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+    height: 1rem;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    width: 197px;
+    height: 67px;
+    /* UI Properties */
+    background: transparent linear-gradient(98deg, #216A8A 0%, #328850 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px 3px 6px #88D0DA96;
+    border-radius: 34px;
+    opacity: 1;
+}
+
+.call ion-icon{
+   width: 31px;
+    height: 31px;
+    /* UI Properties */
+    border: 1px solid #00000000;
+    opacity: 1;
+    border: 1px solid #00000000;
+    opacity: 1;
     color: #FFFFFF;
 }
 
+.call a{
+    width: 86px;
+    height: 31px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 25px/31px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 </style>
 
 <body>
-    <section class="sedes_nacionales">
+    <section class="sedes_nacionales" style="transform: translateX(20px);">
 
         <div class="background_sedes">
             <p class="title_sedes"> Sedes nacionales</p>
-
-            <div class="sedes_location">
+            <!--Barrancabermeja-->
+            <div class="sede_location">
                 <div class="sede">
                     <div class="sede_content">
                         <!-- COLUMNA 1 10% -->
-                        <div class="number"> <p>1</p></div> 
+                        <div class="number"> 
+                            <p>1</p>
+                        </div> 
 
                         <!-- COLUMNA 2 80% -->
                         <div class="sede_details"> 
-                            <p>Barrancabermeja</p>
-                            <p>Kilometro 3 via a Bucaramanga</p>
-                            <p>Cel: <b> 321 221 3333</b></p>
+                            <p class="sede_details_city">Barrancabermeja</p>
+                            <p class="sede_details_info">Kilometro 3 via a Bucaramanga</p>
+                            <p class="sede_details_info">Cel: <b> 321 221 3333</b></p>
                         </div>
 
                         <!-- COLUMNA 3 10%-->
                         <div class="call">
-                            <a href="+573212213333" class="primary_button"> Contactanos </a>
+                            <ion-icon name="call" class="icon"></ion-icon>
+                            <a href="+573212213333"> Llamar </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <br>
+            <!--Bucaramanga-->
+            <div class="sede_location">
+                <div class="sede">
+                    <div class="sede_content">
+                        <!-- COLUMNA 1 10% -->
+                        <div class="number"> 
+                            <p>2</p>
+                        </div> 
+
+                        <!-- COLUMNA 2 80% -->
+                        <div class="sede_details"> 
+                            <p class="sede_details_city">Bucaramanga</p>
+                            <p class="sede_details_info">Cra 11 #28-27</p>
+                            <p class="sede_details_info">Tel: <b> 607-6359317</b></p>
+                            <p class="sede_details_info">Cel: <b> 321 221 3333</b></p>
+                        </div>
+
+                        <!-- COLUMNA 3 10%-->
+                        <div class="call">
+                            <ion-icon name="call" class="icon"></ion-icon>
+                            <a href="+573212213333"> Llamar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--Sabana de torres-->
+            <div class="sede_location">
+                <div class="sede">
+                    <div class="sede_content">
+                        <!-- COLUMNA 1 10% -->
+                        <div class="number"> 
+                            <p>3</p>
+                        </div> 
+
+                        <!-- COLUMNA 2 80% -->
+                        <div class="sede_details"> 
+                            <p class="sede_details_city">Sabana de torres</p>
+                            <p class="sede_details_info">Calle 18 # 11 - 45, 20 de Julio</p>
+                            <p class="sede_details_info">Vereda "El Diamante" frente a "Ecopetrol"</p>
+                            <p class="sede_details_info">Cel: <b> 310 859 5952</b></p>
+                        </div>
+
+                        <!-- COLUMNA 3 10%-->
+                        <div class="call">
+                            <ion-icon name="call" class="icon"></ion-icon>
+                            <a href="+573212213333"> Llamar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--Cantagallo-->
+            <div class="sede_location">
+                <div class="sede">
+                    <div class="sede_content">
+                        <!-- COLUMNA 1 10% -->
+                        <div class="number"> 
+                            <p>4</p>
+                        </div> 
+
+                        <!-- COLUMNA 2 80% -->
+                        <div class="sede_details"> 
+                            <p class="sede_details_city">Cantagallo</p>
+                            <p class="sede_details_info">Calle 2 # 5 - 44, Barrio Nuevo Galán</p>
+                            <p class="sede_details_info">Cel: <b> 321 221 3333</b></p>
+                        </div>
+
+                        <!-- COLUMNA 3 10%-->
+                        <div class="call">
+                            <ion-icon name="call" class="icon"></ion-icon>
+                            <a href="+573212213333"> Llamar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!--Barranquilla-->
+            <div class="sede_location">
+                <div class="sede">
+                    <div class="sede_content">
+                        <!-- COLUMNA 1 10% -->
+                        <div class="number"> 
+                            <p>5</p>
+                        </div> 
+
+                        <!-- COLUMNA 2 80% -->
+                        <div class="sede_details"> 
+                            <p class="sede_details_city">Barranquilla</p>
+                            <p class="sede_details_info">Calle 6a # 18 - 75 Barrio Villa Luz <br>Cel: 314 631 5534</p>
+                        </div>
+
+                        <!-- COLUMNA 3 10%-->
+                        <div class="call">
+                            <ion-icon name="call" class="icon"></ion-icon>
+                            <a href="+573212213333"> Llamar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         
         
     </section>
    
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
 </body>
 </html>
