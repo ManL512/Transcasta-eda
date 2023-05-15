@@ -181,7 +181,7 @@ p {
     padding: 1.8rem 4rem;
     box-sizing: border-box;
     position: relative;
-    height: auto; /* ESTILO A CAMBIAR DEPENDIENDO DE LA PANTALLA*/
+    height: 700px; /* ESTILO A CAMBIAR DEPENDIENDO DE LA PANTALLA*/
 }
 
 .slider_content_app {
