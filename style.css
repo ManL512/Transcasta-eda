@@ -264,43 +264,6 @@ p {
     opacity: 1;
 }
 
-.advantages {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #054965 0% 0% no-repeat padding-box;
-    opacity: 1;
-    justify-content: center; 
-}
-.advantages h2,
-.advantages h3 {
-    text-align: left;
-  color: white;
-}
-
-.advantages h3{
-    font: normal normal 300 25px/31px Lexend Deca;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}
-.group {
-    font-size: small;
-    flex-basis: 18%;
-    text-align: center;
-    font-size: 17px;
-}
-
-.group-inverted {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(90deg);
-    height: 100px; /* ajusta la altura según el contenido */
-    opacity: 1;
-}
-
 .servicios_description{
     overflow: hidden;
     list-style-type: none;
@@ -319,6 +282,46 @@ p {
     margin: 0;
 }
 
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap;
+    background: #054965 0% 0% no-repeat padding-box;
+  }
+  
+  .advantages_title{
+    
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  font: normal normal 600 35px/50px Lexend Deca;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  }
+  
+  .advantages_subtitle{
+    /* UI Properties */
+  text-align: left;
+  font: normal normal 300 25px/31px Lexend Deca;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  }
+  
+  .group-inverted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    height: 100px; /* ajusta la altura según el contenido */
+    opacity: 1;
+  }
+  
 .nuestros_clientes{
     max-width: 100%;
 }
