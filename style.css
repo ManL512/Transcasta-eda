@@ -95,7 +95,6 @@ p {
 }
 
 .menu {
-    
     display: grid;
     grid-template-columns: 12vw 60vw 8vw 10vw;
     align-items: center;
@@ -121,7 +120,6 @@ p {
   
 .main_content {
     /* UI Properties */
-
     opacity: 1;
     display: grid;
     grid-template-columns: 5vw 90vw 0vw;
@@ -497,6 +495,8 @@ transform: translateX(-1000px); /* ancho total del slider */
     transform: translateX(-30px);
 }
 
+
+
 .location-icon{
     width: 37px;
     height: 35px;
@@ -529,22 +529,22 @@ transform: translateX(-1000px); /* ancho total del slider */
 }
 
 .title-policy{
-    width: 360px;
-    height: 50px;
     /* UI Properties */
     text-align: left;
-    font: normal normal 600 40px/50px Lexend Deca;
+    font: normal normal 600 4.5vw/5.6vw Lexend Deca;
     letter-spacing: 0px;
     color: #063C53;
     opacity: 1;
+    margin: 0 2vw;
 }
 
 .policy-item{
-    width: auto;
-    height: 5px;
+    /* UI Properties */
     text-align: left;
-    font: normal normal 300 25px/31px Lexend Deca;
+    font: normal normal 300 2vw/3.7vw Lexend Deca;
     letter-spacing: 0px;
     color: #105471;
     opacity: 1;
+    margin: 0 2vw;
 }
+
