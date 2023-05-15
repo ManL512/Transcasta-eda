@@ -18,7 +18,7 @@ function toggleMadgalenaMedio(){
 }
 
 
-                          /*Despliega la descripcion de mision.*/ 
+/*Despliega la descripcion de mision.*/ 
 function toggleMision() {
   var icono = document.getElementById("mision");
   var descripcion = document.getElementById("descripcion_mision");
@@ -38,17 +38,17 @@ function toggleMision() {
       icono.setAttribute("name", "chevron-down-outline");
       descripcion.style.display = "none"; // Oculta la descripción
       descripcion.style.height = "0"; // Establece la altura a 0px
-      document.querySelector('.mision').style.height = "120px"; // Establece la altura del div mision a 120px
+      document.querySelector('.mision').style.height = "150px"; // Establece la altura del div mision a 150px
   } else {
       icono.setAttribute("name", "chevron-up-outline");
       descripcion.style.display = "block"; // Muestra la descripción
-      descripcion.style.height = "350px"; // Establece la altura fija en 350px
-      document.querySelector('.mision').style.height = "350px"; // Ajusta la altura del div mision a 350px
+      descripcion.style.height = "100%"; // Establece la altura fija en 350px
+      document.querySelector('.mision').style.height = "100%"; // Ajusta la altura del div mision a 350px
   }
 }
 
 
-                          /*Despliega la descripcion de vision.*/ 
+/*Despliega la descripcion de vision.*/ 
 function toggleVision() {
 var icono = document.getElementById("vision");
 var descripcion = document.getElementById("descripcion_vision");
@@ -72,12 +72,12 @@ if (icono.getAttribute("name") === "chevron-up-outline") {
   icono.setAttribute("name", "chevron-up-outline");
   descripcion.style.display = "block"; // Muestra la descripción
   descripcion.style.height = descripcion.scrollHeight + "px"; // Establece la altura dinámicamente
-  document.querySelector('.vision').style.height = "360px"; // Establece la altura del div vision a 350px
+  document.querySelector('.vision').style.height = "100%"; // Establece la altura del div vision a 350px
 }
 }
 
 
-                          /*Despliega la descripcion de sistemas.*/ 
+/*Despliega la descripcion de sistemas.*/ 
 function toggleSistema() {
 var icono = document.getElementById("sistema");
 var descripcion = document.getElementById("descripcion_sistema");
@@ -101,7 +101,7 @@ if (icono.getAttribute("name") === "chevron-up-outline") {
   icono.setAttribute("name", "chevron-up-outline");
   descripcion.style.display = "block";
   descripcion.style.height = descripcion.scrollHeight + "px";
-  document.querySelector('.SistemaIntegrado').style.height = descripcion.scrollHeight + 100 + "px"; // Ajusta la altura del div a la altura de la descripción más 100px
+  document.querySelector('.SistemaIntegrado').style.height = descripcion.scrollHeight + 100 + "%"; // Ajusta la altura del div a la altura de la descripción más 100%
 }
 }   
 
