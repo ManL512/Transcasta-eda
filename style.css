@@ -345,28 +345,32 @@ p {
 
 .slide-container {
     display: flex;
-    width: 1120px;/* ancho de todas las imágenes */
-    animation: slide 20s infinite; /* duración y número de repeticiones de la animación */
+    width: calc(1120px * 2); /* duplicar el ancho de las imágenes */
+    animation: slide 40s linear infinite;
 }
 
 .slide {
-    width: 200px; /* ancho de cada imagen */
+    width: 200px;
     height: auto;
     margin-right: 20px;
-    border: 2px solid #054965; 
+
 }
 
 @keyframes slide {
-0% {
-transform: translateX(0);
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-1120px); /* mover el carrusel hacia la izquierda */
+    }
+    50.01% {
+        transform: translateX(1120px); /* mover el carrusel hacia la derecha */
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
-50% {
-transform: translateX(-700px); /* mitad del ancho total del slider */
-}
-100% {
-transform: translateX(-1000px); /* ancho total del slider */
-}
-}
+
 
 .informacion-de-interes{
     display: grid;
