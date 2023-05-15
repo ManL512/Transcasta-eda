@@ -293,25 +293,32 @@ p {
   }
   
   .advantages_title{
-    
     text-align: left;
     align-items: center;
     justify-content: center;
-  font: normal normal 600 35px/50px Lexend Deca;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
+    font: normal normal 600 35px/20px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
   }
   
   .advantages_subtitle{
     /* UI Properties */
-  text-align: left;
-  font: normal normal 300 25px/31px Lexend Deca;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
+    text-align: left;
+    font: normal normal 300 25px/20px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
   }
   
+  .icon{
+    color: #063C53;
+    width: 49px;
+    height: 2.2rem;
+    opacity: 1;
+    transform: translateX(-5rem);
+}
+
   .group-inverted {
     display: flex;
     flex-direction: column;
@@ -353,7 +360,6 @@ p {
     width: 200px;
     height: auto;
     margin-right: 20px;
-
 }
 
 @keyframes slide {

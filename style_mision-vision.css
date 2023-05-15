@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.zoneTitle h3{
+  padding-left: 3%;
+}
+
 .description{
   width: 100%;
   height: 100%;

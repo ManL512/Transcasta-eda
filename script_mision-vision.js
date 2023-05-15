@@ -17,35 +17,34 @@ function toggleMadgalenaMedio(){
   toggleDescripcion('')
 }
 
-
-/*Despliega la descripcion de mision.*/ 
+/*Despliega la descripcion de mision.*/
 function toggleMision() {
   var icono = document.getElementById("mision");
   var descripcion = document.getElementById("descripcion_mision");
   var descripcionVision = document.getElementById("descripcion_vision");
   var descripcionSistema = document.getElementById("descripcion_sistema");
 
+  if (icono.getAttribute("name") === "chevron-up-outline") {
+    icono.setAttribute("name", "chevron-down-outline");
+    descripcion.style.display = "none";
+    descripcion.style.height = "0";
+    document.querySelector('.mision').style.height = "150px";
+  } else {
+    icono.setAttribute("name", "chevron-up-outline");
+    descripcion.style.display = "block";
+    descripcion.style.height = "100%";
+    document.querySelector('.mision').style.height = "350px";
+  }
 
   // Cerrar otras descripciones si están abiertas
-  if (descripcionVision.style.display === "block") {
+  if (descripcionVision.style.display === "block" && icono.getAttribute("name") === "chevron-up-outline") {
     toggleVision();
   }
-  if (descripcionSistema.style.display === "block") {
+  if (descripcionSistema.style.display === "block" && icono.getAttribute("name") === "chevron-up-outline") {
     toggleSistema();
   }
-
-  if (icono.getAttribute("name") === "chevron-up-outline") {
-      icono.setAttribute("name", "chevron-down-outline");
-      descripcion.style.display = "none"; // Oculta la descripción
-      descripcion.style.height = "0"; // Establece la altura a 0px
-      document.querySelector('.mision').style.height = "150px"; // Establece la altura del div mision a 150px
-  } else {
-      icono.setAttribute("name", "chevron-up-outline");
-      descripcion.style.display = "block"; // Muestra la descripción
-      descripcion.style.height = "100%"; // Establece la altura fija en 350px
-      document.querySelector('.mision').style.height = "100%"; // Ajusta la altura del div mision a 350px
-  }
 }
+
 
 
 /*Despliega la descripcion de vision.*/ 
@@ -104,6 +103,7 @@ if (icono.getAttribute("name") === "chevron-up-outline") {
   document.querySelector('.SistemaIntegrado').style.height = descripcion.scrollHeight + 100 + "%"; // Ajusta la altura del div a la altura de la descripción más 100%
 }
 }   
+
 
 
 function mostrarContenidoZona_1() {
