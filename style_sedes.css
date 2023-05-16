@@ -190,6 +190,8 @@
   .sede{
     max-width: 100%;
     display: flex;
+    width: 26rem;
+    overflow: hidden;
   }
   .number p{
     transform: translateX(-2rem);
