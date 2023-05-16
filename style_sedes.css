@@ -144,7 +144,7 @@
 
 /* Estilos para iPhone 11 */
 @media only screen 
-  and (min-device-width: 414px) 
+  and (min-device-width: 350px) 
   and (max-device-width: 828px) 
   and (-webkit-device-pixel-ratio: 2) {
     /* Aquí puedes añadir los estilos específicos para iPhone 11 */
