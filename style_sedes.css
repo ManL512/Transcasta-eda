@@ -151,18 +151,19 @@
   .menu_items, .social_media, .primary_button {
       display: none;
   }
+  /* Estilos para el logo y el menú hamburguesa */
+  /* Estilos para el menú hamburguesa */
   .menu_icon {
     display: block;
+    float: left;
+    margin-top: 5px;
   }
-  
-  /* Estilos para el logo y el menú hamburguesa */
+
+  /* Estilos para el logo */
   .logo {
-      width: 400%;
-  }
-  .menu_icon {
       display: block;
-      width: 150%;
-      text-align: right;
+      margin: 0 auto;
+      width: 150px; /* ajusta el tamaño según tus necesidades */
   }
 }
 
