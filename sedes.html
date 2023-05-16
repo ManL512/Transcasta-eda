@@ -16,9 +16,15 @@
 
 <header>
     <div class="blue_line_movil">
-
+        <!--AQUI DEBE IR EL BLOQUE AZUL Y SUS ESTILOS SON :
+        height: 14px;
+        width: 100%
+        /* UI Properties */
+        background: #054965 0% 0% no-repeat padding-box;
+        opacity: 1;-->
     </div>
-
+    <br>
+    <br>
     <div class="menu">
         <div class="menu_icon" class="icon">
             <a href="index.html"> <ion-icon name="arrow-back-outline"> </ion-icon>  </a> 
@@ -52,7 +58,9 @@
 
 
 <body>
-    <section class="sedes_nacionales" style="transform: translateX(20px);">
+
+
+    <section class="sedes_nacionales">
 
         <div class="background_sedes">
             <p class="title_sedes_m"> Sedes </p> <!--TITULO VERSION MOVIL-->
@@ -61,26 +69,58 @@
             <!--Barrancabermeja-->
             <div class="sede_location">
                 <div class="sede">
-                    <div class="sede_content">
-                        <!-- COLUMNA 1 10% -->
-                        <div class="number"> 
-                            <p>1</p>
-                        </div> 
 
-                        <!-- COLUMNA 2 80% -->
-                        <div class="sede_details"> 
-                            <p class="sede_details_city">Barrancabermeja</p>
-                            <p class="sede_details_info">Kilometro 3 vía a Bucaramangaz <br>Cel:<b> 321 221 3333 </b></p>
+                    <!-- VERSION WEB-->
+                    <section class="Sede_content_w">
+
+                        <div class="sede_content">
+                            <!-- COLUMNA 1 10% VERSION-->
+                            <div class="number"> 
+                                <p>1</p>
+                            </div> 
+    
+                            <!-- COLUMNA 2 80% -->                            
+                            <div class="sede_details"> 
+                                <p class="sede_details_city">Barrancabermeja</p>
+                                <p class="sede_details_info">Kilometro 3 vía a Bucaramanga <br>Cel:<b> 321 221 3333 </b></p>
+                            </div>
+    
+                                <!-- COLUMNA 3 10% -->
+                            <div class="call">
+                                <ion-icon name="call" class="icon"></ion-icon>
+                                <a href=""> Llamar </a>
+                            </div>
+
                         </div>
 
-                        <!-- COLUMNA 3 10%-->
-                        <div class="call">
-                            <ion-icon name="call" class="icon"></ion-icon>
-                            <a href=""> Llamar </a>
+                    </section>
+                    <!-- VERSION MOVIL-->
+                    <section class="Sede_content_m">
+                        <div class="sede_content">
+                            <!-- COLUMNA 1 10% VERSION-->
+                            <div class="number"> 
+                                <p>1</p>
+                            </div> 
+    
+                            <!-- COLUMNA 2 80% -->                            
+                            <div class="sede_details"> 
+
+                                <p class="sede_details_city">Barrancabermeja</p>
+                                <p class="sede_details_info">Kilometro 3 vía a Bucaramanga <br>Cel:<b> 321 221 3333 </b></p>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="call">
+                                    <ion-icon name="call" class="icon"></ion-icon>
+                                    <a href=""> Llamar </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    
                 </div>
             </div>
+            
 
             <br>
             <!--Bucaramanga-->
