@@ -46,8 +46,6 @@
   width: 100%;
 }
 
-
-
 .sede_content {
     align-items: center;
 }
@@ -172,30 +170,37 @@
       display: block;
       width: 12rem; /* ajusta el tamaño según tus necesidades */
   }
-}
 
-
-/* Estilos para pantallas más pequeñas */
-@media (max-width: 767px) {
-  .sede_content {
+  .title_sedes{
+    display: none;
+  }
+  
+  .background_sedes{
+    max-width: 100%;
+  }
+  .call{
+    display: none !important;
+  }
+  .call ion-icon{
+    display: none;
+  }
+  .call a{
+    display: none;
+  }
+  .sede{
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
   }
-  
-  .sede_details {
-    margin-top: 10px;
+  .number p{
+    transform: translateX(-2rem);
   }
-  
-  .call {
-    margin-top: 10px;
-  }
-
-  .background_sedes {
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
+  .sede_details{
+    transform: translateY(-40%);
   }
 }
+
+
+
 
 /* Estilos para pantallas más grandes */
 @media (min-width: 768px) {
