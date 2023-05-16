@@ -148,20 +148,20 @@
   and (max-device-width: 828px) 
   and (-webkit-device-pixel-ratio: 2) {
     /* Aquí puedes añadir los estilos específicos para iPhone 11 */
-    .menu_items, .social_media, .primary_button {
+  .menu_items, .social_media, .primary_button {
       display: none;
   }
   .menu_icon {
     display: block;
-}
+  }
   
   /* Estilos para el logo y el menú hamburguesa */
   .logo {
-      width: 100%;
+      width: 400%;
   }
   .menu_icon {
       display: block;
-      width: 50%;
+      width: 150%;
       text-align: right;
   }
 }
