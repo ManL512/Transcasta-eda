@@ -139,15 +139,23 @@
   .menu_icon {
       display: none;
   }
+  .blue_line_movil{
+    display: none;
+  }
 }
 
 /* Estilos para iPhone 11 */
 @media only screen 
-  and (min-device-width: 350px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 828px) {
     /* Aquí puedes añadir los estilos específicos para iPhone 11 */
   .menu_items, .social_media, .primary_button {
       display: none;
+  }
+  .blue_line_movil{
+    color: #063C53;
+    height: 20px;
+    width: 100%;
   }
   .menu{
     display: flex;
