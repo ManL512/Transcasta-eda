@@ -136,6 +136,7 @@
 
 /* Estilos para la versión de escritorio del sitio */
 @media only screen and (min-width: 768px) {
+
   /* Ocultar el icono de menú hamburguesa en la versión de escritorio */
   .menu_icon {
       display: none;
@@ -151,19 +152,19 @@
   .menu_items, .social_media, .primary_button {
       display: none;
   }
-  /* Estilos para el logo y el menú hamburguesa */
   /* Estilos para el menú hamburguesa */
   .menu_icon {
     display: block;
     float: left;
     margin-top: 5px;
+    height: 100%;
   }
 
   /* Estilos para el logo */
   .logo {
       display: block;
       margin: 0 auto;
-      width: 150px; /* ajusta el tamaño según tus necesidades */
+      width: 300px; /* ajusta el tamaño según tus necesidades */
   }
 }
 
