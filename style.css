@@ -582,8 +582,7 @@ p {
       z-index: 1;
     }
   
-    .menu{  
-       height: 100%; 
+    .menu{   
       display: flex;
       align-items: center;
       justify-content: space-around;
