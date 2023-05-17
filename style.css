@@ -606,3 +606,16 @@ p {
     }
   }
 
+  @media only screen and (min-width: 750px) {
+      /* Ocultar el icono de menú hamburguesa en la versión de escritorio */
+    .menu_icon {
+        display: none;
+    }
+    .title_sedes_m{
+        display: none;
+    }
+    .blue_line_movil{
+        display: none;
+    }
+  }
+
