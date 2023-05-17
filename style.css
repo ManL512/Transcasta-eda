@@ -602,7 +602,10 @@ p {
     /* Estilos para el logo */
     .logo img {
         display: block;
-        width: 12rem; /* ajusta el tamaño según tus necesidades */
+        max-width: 60%; /* ajusta el tamaño según tus necesidades */
+        /* UI Properties */
+        background: transparent url('img/Imagen 1.png') 0% 0% no-repeat padding-box;
+        mix-blend-mode: darken;
     }
   }
 
