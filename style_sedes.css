@@ -168,46 +168,7 @@ MOVILES
   and (min-device-width: 300px) 
   and (max-device-width: 828px) {
     /* Aquí puedes añadir los estilos específicos para iPhone 11 */
-  .menu_items, .social_media, .primary_button {
-      display: none;
-  }
-  .blue_line_movil {
-    height: 14px;
-    width: 100%;
-    background: #054965;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  header {
-    position: relative;
-    z-index: 1;
-  }
-
-  .menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  /* Estilos para la felcha de volver */
-  .menu_icon {
-    display: block;
-    float: left;
-    height: 100%;
-  }
-
-  .menu_icon ion-icon{
-    font-size: 2.5rem;
-  }
-  
-  /* Estilos para el logo */
-  .logo img {
-      display: block;
-      width: 12rem; /* ajusta el tamaño según tus necesidades */
-  }
+ 
 
   .title_sedes_w{
     display: none;
