@@ -598,6 +598,10 @@ p {
     .menu_icon ion-icon{
       font-size: 2.5rem;
     }
+
+    .back_icon{
+        transform: translateX(4rem);
+    }
     
     /* Estilos para el logo */
     .logo img {
@@ -621,6 +625,9 @@ p {
         display: none;
     }
     .blue_line_movil{
+        display: none;
+    }
+    .derechos_reservados_movil{
         display: none;
     }
   }
