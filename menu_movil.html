@@ -9,39 +9,61 @@
 </head>
 <body>
     <style>
+      
+        .html{
+          background: transparent linear-gradient(205deg, #E6ECEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+          box-shadow: 0px 3px 6px #00000029;
+        }
        .menu_movil {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+          height: 40rem;
+          display: flex;
+          justify-content: flex-start; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+        }
 
-.menu_items_movil {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
+        .menu_items_movil {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          
+        }
 
-.menu_items_movil li {
-  margin-bottom: 10px;
-}
+        .menu_items_movil li {
+          margin-bottom: 3.5rem;
+        }
 
-.redes_sociales {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+        .social_media_movil ion-icon {
+          transform: translateX(4.5rem);
+          margin-right: 1rem;
+          font-size: 1.7rem;
+        }
 
-.redes_sociales ion-icon {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
+        a{
+          text-decoration: none;
+        }
+
+        .volver_movil {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 999;
+        }
+          
+        .volver_movil ion-icon {
+          color: #063C53;
+          font-size: 3rem;
+          cursor: pointer;
+        }
 
 
     </style>
-    <div class="menu_movil">
+      <div class="volver_movil">
+          <ion-icon name="close-circle-outline"></ion-icon> 
+      </div>
+      <div class="menu_movil">
         <!-- BARRA NAV -->
         <div>
           <ul class="menu_items_movil">
@@ -50,11 +72,15 @@
             <li class="shaded"> <a href="Apps.html"> Apps y tecnología</a></li>
             <li class="shaded"> <a href="sedes.html">Sedes</a></li>
             <li class="shaded"> <a href="https://transcastaneda.hiworldapp.com/">Login</a></li>
-            <li> <ion-icon name="logo-facebook"></ion-icon> </li>
-            <li> <a href="https://www.instagram.com/transcastaneda_sas/"> <ion-icon name="logo-instagram"></ion-icon> </a>
-            </div></li>
           </ul>
+
+          <div class="social_media_movil">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>  
+          </div>
+
         </div>
+      </div>
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>      
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
