@@ -126,6 +126,14 @@ p {
     align-items: center;
 }
 
+.text_service{
+    text-align: left;
+    font: normal normal 300 18px/23px Lexend Deca;
+    letter-spacing: 0px;
+    color: #105471;
+    opacity: 1;
+}
+
 .slider_image{
     width: auto;
     background: transparent url('img/1.png') 0% 0% no-repeat padding-box;
@@ -602,14 +610,112 @@ p {
     .back_icon{
         transform: translateX(4rem);
     }
+
+    /*               INDEX                 */
     
-    /* Estilos para el logo */
     .logo img {
         display: block;
         max-width: 60%; /* ajusta el tamaño según tus necesidades */
-        /* UI Properties */
         background: transparent url('img/Imagen 1.png') 0% 0% no-repeat padding-box;
         mix-blend-mode: darken;
+    }
+
+    .main_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slider_content{
+        height: 15rem;
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        width: 90%;
+        padding: 0%;
+        overflow: hidden;
+    }
+
+    .title_service_m{
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .title_description_service h2{
+        display: none;
+    }
+
+    .primary_button_m{
+        color: #FAFAFA;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        width: fit-content;
+        height: fit-content;
+        /* UI Properties */
+        border: none;
+        background: transparent linear-gradient(97deg, #156588 0%, #22673A 100%) 0% 0% no-repeat padding-box;
+        box-shadow: inset 3px 3px 6px #88D0DA96;
+        border-radius: 34px;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    
+    }
+    
+    .primary_button_m:hover{
+        background: transparent linear-gradient(97deg, #2966b1 0%, #174517 100%) 0% 0% no-repeat padding-box;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 0px 15px #32CD3296;
+    }
+
+    .slider_img{
+        display: none;
+    }
+    .imagen_movil{
+        height: 12rem;
+        transform: translateX(-3.2rem);
+    }
+
+    .servicios_description{
+        display: none;
+    }
+
+
+
+    .left_arrow{
+        display: none;
+    }
+
+    .right_arrow{
+        display: none;
+    }
+
+    .line_gradient{
+        display: none;
+    }
+
+    .ventajas{
+        display: none;
+    }
+
+    .clientes{
+        display: none;
+    }
+
+    .informacion{
+        display: none;
+    }
+
+    .legalidad{
+        display: none;
+    }
+
+    .derechos_reservados{
+        display: none;
+    }
+
+    .contenido_principal{
+        display: none;
     }
   }
 
@@ -628,6 +734,12 @@ p {
         display: none;
     }
     .derechos_reservados_movil{
+        display: none;
+    }
+    .imagen_movil{
+        display: none;
+    }
+    .contenido_principal_movil{
         display: none;
     }
   }
