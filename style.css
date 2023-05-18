@@ -627,6 +627,14 @@ p {
         width: 100%;
     }
 
+    .slider_wrapper{
+        padding-left: 1rem;
+    }
+    .slider_title{
+        padding: 0%;
+        margin: 0%;
+    }
+
     .slider_content{
         height: 15rem;
         display: grid;
@@ -636,9 +644,23 @@ p {
         overflow: hidden;
     }
 
+    .text_service_m{
+        padding: 0%;
+        height: 0%;
+        text-align: left;
+        font: normal normal 300 18px/23px Lexend Deca;
+        letter-spacing: 0px;
+        color: #105471;
+        opacity: 1;
+    }
+
     .title_service_m{
-        padding-top: 2rem;
-        font-size: 3rem;
+        font-size: 1.5rem;
+        text-align: left;
+        font: normal normal bold 30px/23px Lexend Deca;
+        letter-spacing: 0px;
+        color: #063C53;
+        opacity: 1;
     }
 
     .title_description_service h2{
@@ -646,34 +668,20 @@ p {
     }
 
     .primary_button_m{
-        color: #FAFAFA;
-        box-sizing: border-box;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-        width: fit-content;
-        height: fit-content;
-        /* UI Properties */
-        border: none;
         background: transparent linear-gradient(97deg, #156588 0%, #22673A 100%) 0% 0% no-repeat padding-box;
         box-shadow: inset 3px 3px 6px #88D0DA96;
         border-radius: 34px;
-        transition: background-color 0.3s ease;
         text-decoration: none;
-    
+        color: #FFFFFF;
     }
     
-    .primary_button_m:hover{
-        background: transparent linear-gradient(97deg, #2966b1 0%, #174517 100%) 0% 0% no-repeat padding-box;
-        transition: background-color 0.3s ease;
-        box-shadow: 0px 0px 15px #32CD3296;
-    }
 
     .slider_img{
         display: none;
     }
     .imagen_movil{
         height: 12rem;
-        transform: translateX(-3.2rem);
+        transform: translateX(-2.7rem);
     }
 
     .servicios_description{
