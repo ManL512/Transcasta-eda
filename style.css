@@ -676,7 +676,15 @@ p {
     }
 
     .slider_image_saberMas{
+        transform: translateY(15rem);
+        height: 2rem;
+        max-width: 100%;
+
         transform: translateX(-1.2rem);
+    }
+
+    .slider_image_saberMas img {
+        height: 12rem;
     }
 
     .slider_image img{
