@@ -612,7 +612,7 @@ p {
     }
 
     /*               INDEX                 */
-    
+
     .logo img {
         display: block;
         max-width: 60%; /* ajusta el tamaño según tus necesidades */
@@ -645,7 +645,7 @@ p {
     }
 
     .slider_content_saberMas{
-        height: 40rem;
+        height: auto;
         display: grid;
         width: 100%;
         padding: 0%;
