@@ -644,6 +644,14 @@ p {
         overflow: hidden;
     }
 
+    .slider_content_saberMas{
+        height: 40rem;
+        display: grid;
+        width: 100%;
+        padding: 0%;
+        overflow: hidden;
+    }
+
     .text_service_m{
         padding: 0%;
         height: 0%;
@@ -665,6 +673,10 @@ p {
 
     .slider_image{
         transform: translateY(2rem);
+    }
+
+    .slider_image_saberMas{
+        transform: translateX(-1.2rem);
     }
 
     .slider_image img{
@@ -700,24 +712,6 @@ p {
     .imagen_movil{
         height: 12rem;
         transform: translateX(-2.7rem);
-    }
-
-    .servicios_description{
-        display: none;
-    }
-
-
-
-    .left_arrow{
-        display: none;
-    }
-
-    .right_arrow{
-        display: none;
-    }
-
-    .line_gradient{
-        display: none;
     }
 
     .ventajas{
