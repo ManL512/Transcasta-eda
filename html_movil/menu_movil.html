@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+</head>
+<body>
+    <style>
+      
+        .html{
+          background: transparent linear-gradient(205deg, #E6ECEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+          box-shadow: 0px 3px 6px #00000029;
+        }
+       .menu_movil {
+          height: 40rem;
+          display: flex;
+          justify-content: flex-start; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+        }
+
+        .menu_items_movil {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          
+        }
+
+        .menu_items_movil li {
+          margin-bottom: 3.5rem;
+          font-size: 1.5rem;
+        }
+
+        .social_media_movil ion-icon {
+          transform: translateX(4.5rem);
+          margin-right: 1rem;
+          font-size: 1.7rem;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+        .volver_movil {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          z-index: 999;
+        }
+          
+        .volver_movil ion-icon {
+          color: #063C53;
+          font-size: 3rem;
+          cursor: pointer;
+        }
+
+
+    </style>
+      <div class="volver_movil">
+          <a href="index.html"> <ion-icon name="close-circle-outline"></ion-icon>  </a>
+      </div>
+      <div class="menu_movil">
+        <!-- BARRA NAV -->
+        <div>
+          <ul class="menu_items_movil">
+            <li> Servicios</li>
+            <li class="shaded"> <a href="Mision-vision.html">Nosotros</a></li>
+            <li class="shaded"> <a href="Apps.html"> Apps y tecnología</a></li>
+            <li class="shaded"> <a href="sedes.html">Sedes</a></li>
+            <li class="shaded"> <a href="https://transcastaneda.hiworldapp.com/">Login</a></li>
+          </ul>
+
+          <div class="social_media_movil">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.instagram.com/transcastaneda_sas/"> <ion-icon name="logo-instagram"></ion-icon> </a>
+          </div>
+
+        </div>
+      </div>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</body>
+</html>

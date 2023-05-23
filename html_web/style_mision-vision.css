@@ -1,0 +1,89 @@
+.main_content_nosotros {
+  /* UI Properties */
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 5vw 90vw 0vw;
+  align-items: center;
+  height: auto;
+}
+
+.slider_content_nosotros {
+  background-color: #FAFAFA;
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.16);
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  padding: 1.8rem 4rem;
+  box-sizing: border-box;
+  position: relative;
+  height: auto; /* ESTILO A CAMBIAR DEPENDIENDO DE LA PANTALLA*/
+}
+
+.left-side-content {
+  width: 100%;
+}
+
+.right-side-content{
+  width: 90%;
+}
+
+/*Estilos para la caja de texto MISION*/
+
+.mision{
+  height: auto; 
+  transition: height 0.5s ease;
+}
+
+.zoneTitle{
+  width: 100%; 
+  height: 117px; 
+  max-width: 100%;
+  background: #d0d9dd5d 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.zoneTitle h3{
+  padding-left: 3%;
+}
+
+.description{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  letter-spacing: 3px;
+  color: #105471;
+}
+
+.text_parragraph{
+  text-align: left;
+  font: normal normal 300 25px/31px Lexend Deca;
+  letter-spacing: 0px;
+  color: #105471;
+  opacity: 1;
+}
+
+/*Estilos para la caja de texto VISION*/
+
+.vision{
+  height: auto; 
+  transition: height 0.5s ease;
+}
+
+.SistemaIntegrado{
+  height: auto; 
+  transition: height 0.5s ease;
+}
+.imagen_nosotros {
+  height: 40rem;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.imagen_nosotros img {
+  max-width: 100%;
+  height: 100%;
+}
+

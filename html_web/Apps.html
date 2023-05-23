@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Apps y tecnología </title>
+</head>
+
+
+<header>
+  <section class="derechos_reservados_movil">
+    <div class="rights_reserved" style="height: 2rem;">
+        <p class="text_rights" style="font-size: 0.7rem;">© 2023 TRANSCASTAÑEDA | TODOS LOS DERECHOS RESERVADOS</p> 
+    </div>
+  </section>
+
+  <div class="menu">
+      <div class="back_icon">
+        <a href="/html_movil/menu_movil.html"> <ion-icon name="arrow-back-outline" class="icon"></ion-icon> </a> 
+      </div>
+
+      <!-- LOGO -->
+      <div class="logo"> <img src="/Sellos/logo_transcastañeda.png" alt="Logo-Transcastañeda"></div>
+      <!-- BARRA NAV -->
+      <div>
+          <ul class="menu_items" style="text-decoration: none;">
+              <li class="shaded"> <a href="index.html">Servicios</a></li>
+              <li class="shaded"> <a href="Mision-vision.html">Nosotros</a></li>
+              <li>  Apps y tecnología </li>
+              <li class="shaded"> <a href="sedes.html">Sedes</a></li>
+              <li class="shaded"> <a href="https://transcastaneda.hiworldapp.com/">Login</a></li>
+          </ul>
+      </div>
+      <!-- REDES SOCIALES -->
+      <div class="social_media"> 
+          <ion-icon name="logo-facebook"></ion-icon>
+          <a href="https://www.instagram.com/transcastaneda_sas/"> <ion-icon name="logo-instagram"></ion-icon> </a>
+      </div>
+      <!-- BOTON DE CONTACTO -->
+      <a href="Contactanos.html" class="primary_button"> Contactanos </a>
+
+  </div>
+
+</header>
+
+<body>
+
+<style>
+    .slider_title{
+        width: 753px;
+        height: 8rem;
+        /* UI Properties */
+        background: #054965 0% 0% no-repeat padding-box;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .app_name{
+        width: 1000px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 80px/0% Lexend Deca;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .text_p_app{
+        width: 96px;
+        height: 63px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #105471;
+        opacity: 1;
+    }
+
+    .playStore {
+        height: 4rem;
+        padding: 20px;
+    }
+
+    .playStore_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        height: 5rem;
+        background: #054965;
+    }
+
+    .playStore_descargala {
+        display: flex;
+        align-items: center;
+        max-width: 328px;
+        width: 17rem;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 20px #00000029;
+        padding: 10px;
+        border-radius: 3%;
+    }
+
+.playStore_descargala p {
+        width: auto;
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+}
+
+
+.rastreo_digital {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: transparent linear-gradient(127deg, #105471 0%, #246A88 100%) 0% 0% no-repeat padding-box;
+}
+
+.rastreo_left_content {
+  width: 100%;
+  text-align: center;
+  background: transparent url('/Sellos/Satelite.png') 0% 0% no-repeat padding-box;
+  mix-blend-mode: luminosity;
+  grid-column: 1 / 2;
+}
+
+.rastreo_left_content p {
+  color: #FFFFFF;
+  font: normal normal bold 60px/75px Lexend Deca;
+  letter-spacing: 0px;
+}
+
+.rastreo_right_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rastreo_right_content p {
+  text-align: center;
+  font: normal normal 300 24px/30px Lexend Deca;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .rastreo_digital {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .rastreo_left_content {
+    width: 100%;
+    text-align: left;
+    background-position: center;
+    mix-blend-mode: normal;
+    grid-column: 1 / 2;
+  }
+  
+  .rastreo_left_content p {
+    font: normal normal bold 120px/150px Lexend Deca;
+    letter-spacing: 0px;
+  }
+  
+  .rastreo_right_content {
+    width: 100%;
+    padding: 0 0%;
+    box-sizing: border-box;
+  }
+  
+  .rastreo_right_content p {
+    text-align: left;
+    font: normal normal 300 40px/50px Lexend Deca;
+    letter-spacing: 0px;
+  }
+}
+
+</style>
+
+
+    <!-- La pagina principal esta dividida en 6 secciones: 
+    
+    (1) -- HICAR SERVICIOS
+
+    (2) -- descargala en play store
+
+    (3) -- clientes
+
+    (4) -- informacion
+
+    (5) -- legalidad
+
+    (6) -- derechos_reservados
+    
+    -->
+
+<!-- (1) HICAR SERVICIOS -->
+<section class="Introduccion">
+    <div class="main_content" style="    grid-template-columns: 5vw 90vw 0vw;">
+
+        <div class="line">  </div>
+        <div class="slider_content_app">
+            <div class="slider_description">
+
+                <P class="text_p_app">App</P>
+                <div class="slider_title">
+
+                    <p class="app_name"> HICAR servicios</p>  
+
+                    <div class="line_gradient" style="display: contents;">
+                        <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px; transform: translateX(600px);"></div>
+                    </div>
+                </div>
+
+                <p class="app_description"> Diseñada para conocer toda la información relacionada a los servicios prestados por la empresa como <b> rutas, personal a transportar, información del conductor e información del vehículo. </b> </p> 
+
+
+            </div>
+            <div class="slider_image">
+                <img src="/hicar_servicios/HICAR_servicios_gif.gif" style="height: 40rem;"> 
+            </div>
+        </div>
+        
+        <div class="line">  </div>
+    </div>
+</section>
+   
+<section class="playStore" style="max-width: 100%;">
+  <div class="playStore_content" style="float: right;" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.transcastaneda'">
+        <div class="playStore_descargala" style="box-sizing: border-box; display: flex; align-items: center;">
+            <div style="flex: 1;">
+              <img src="/Sellos/play_store_icon.png" alt="Play-Store icon" style="height: 40px;">
+            </div>
+            <div class="texto" style="flex: 1.5;">
+              <p>Descarga en</p>
+              <p style="margin: 0%;"> <b> Play Store </b></p>
+            </div>
+            <div class="trazado" style="flex: 0.5;">
+              <img src="/Sellos/Trazado 8984.png" alt="">
+            </div>
+          </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+<section class="App HICAR">
+    <div class="main_content" style="    grid-template-columns: 5vw 90vw 0vw;">
+
+      <div class="line">  <img src="Sellos/Trazado 8832.png" alt=""></div>
+        <div class="slider_content_app" style="grid-template-columns: 40% 60%;">
+
+            <div class="slider_image">
+                <img src="/hicar/app_slider.gif" style="height: 40rem;"> 
+            </div>
+
+            <div class="slider_description">
+
+                <P class="text_p_app">App</P>
+                <div class="slider_title" style="width:20rem">
+
+                    <p class="app_name"> HICAR </p>  
+
+                    <div class="line_gradient" style="transform: translateX(-30px);">
+                        <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px; transform: translateX(600px);"></div>
+                    </div>
+                </div>
+
+                <p class="app_description"> Aplicación diseñada para el control y seguridad de nuestro vehículo diariamente cumpliendo con las <b> REVISIONES PREOPERACIONALES </b> </p> 
+
+
+            </div>
+        </div>
+        <div class="line">  </div>
+    </div>
+</section>
+
+<section class="playStore" style="max-width: 100%;">
+  <div class="playStore_content" style="float: right;" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.transcastaneda'">
+        <div class="playStore_descargala" style="box-sizing: border-box; display: flex; align-items: center;">
+            <div style="flex: 1;">
+              <img src="/Sellos/play_store_icon.png" alt="Play-Store icon" style="height: 40px;">
+            </div>
+            <div class="texto" style="flex: 1.5;">
+              <p>Descarga en</p>
+              <p style="margin: 0%;"> <b> Play Store </b></p>
+            </div>
+            <div class="trazado" style="flex: 0.5;">
+              <img src="/Sellos/Trazado 8984.png" alt="">
+            </div>
+          </div>
+    </div>
+</section>
+
+<section class="rastreo_digital" style="max-width: 100%;">
+    <div class="rastreo_left_content">
+        <p class="satelital_title"> Rastreo satelital</p>
+    </div>
+
+    <div class="rastreo_right_content">
+        <p> Trabajamos de la mano con el proveedor satelital rastreando cualquier tipo de vehículo que nos ayudan obtener información de la geolocalización y hacer seguimiento en tiempo real de la operación de los vehículos brindando informes según la necesidad del cliente.</p>
+    </div>
+</section>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Trancastañeda</title>
+</head>
+
+<header>
+
+    <section class="derechos_reservados_movil">
+        <div class="rights_reserved" style="height: 2rem;">
+            <p class="text_rights" style="font-size: 0.7rem;">© 2023 TRANSCASTAÑEDA | TODOS LOS DERECHOS RESERVADOS</p> 
+        </div>
+    </section>
+    <div class="menu">
+        <div class="menu_icon">
+        <!-- MENU HAMBURGUESA PARA VERSION MOVIL -->
+            <a href="/html_movil/menu_movil.html"> <ion-icon name="menu-outline"></ion-icon> </a>
+        </div>
+        <!-- LOGO -->
+        <div class="logo"> <img src="/Sellos/logo_transcastañeda.png" alt="Logo-Transcastañeda"></div>
+        <!-- BARRA NAV -->
+        <div>
+            <ul class="menu_items" style="text-decoration: none;">
+                <li> Servicios</li>
+                <li class="shaded"> <a href="Mision-vision.html">Nosotros</a></li>
+                <li class="shaded"> <a href="Apps.html"> Apps y tecnología</a></li>
+                <li class="shaded"> <a href="sedes.html">Sedes</a></li>
+                <li class="shaded"> <a href="https://transcastaneda.hiworldapp.com/">Login</a></li>
+            </ul>
+        </div>
+        <!-- REDES SOCIALES -->
+        <div class="social_media"> 
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.instagram.com/transcastaneda_sas/"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        </div>
+        <!-- BOTON DE CONTACTO -->
+        <a href="Contactanos.html" class="primary_button"> Contactanos </a>
+  
+    </div>
+  
+  </header>
+
+<body>
+
+      
+    <!-- La pagina principal esta dividida en 6 secciones: 
+    
+    (1) -- contenido_principal
+
+    (2) -- ventajas
+
+    (3) -- clientes
+
+    (4) -- informacion
+
+    (5) -- legalidad
+
+    (6) -- derechos_reservados
+    
+    -->
+
+    <script>
+
+        function changeSlider(num) {
+        // Obtenemos todos los sliders y las imágenes
+        var sliders = document.getElementsByClassName("slider_description");
+        var images = document.getElementsByClassName("slider_img");
+
+        // Buscamos el slider actual
+        var currentSlider = 0;
+        for (var i = 0; i < sliders.length; i++) {
+            if (sliders[i].style.display !== "none") {
+            currentSlider = i;
+            break;
+            }
+        }
+
+        // Ocultamos el slider y la imagen actual
+        sliders[currentSlider].style.display = "none";
+        images[currentSlider].style.display = "none";
+
+        // Mostramos el slider y la imagen siguiente o anterior
+        var nextSlider = currentSlider + num;
+        if (nextSlider < 0) {
+            nextSlider = sliders.length - 1;
+        } else if (nextSlider >= sliders.length) {
+            nextSlider = 0;
+        }
+        sliders[nextSlider].style.display = "block";
+        images[nextSlider].style.display = "block";
+}
+  
+    </script>
+
+    <!-- (1) contenido principal WEB -->
+    <section class="contenido_principal">
+
+    <div class="main_content">
+            <div class="left_arrow" onclick="changeSlider(-1)"> < </div>
+
+                <div class="slider_content">
+                    <div class="slider_wrapper">
+                        <p class="text_service">Servicio</p>
+                        <!--Slider 1 -->
+                        <div class="slider_description" id="slider1">
+
+                          <div class="slider_title">
+                            <p class="title_service">Empresarial</p>
+                            <div class="line_gradient" style="display: grid;">
+                              <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                            </div>
+                          </div>
+                          <h2 style="transform: translateY(-100px);" class="title_description_service">Brindamos a empresas:</h2>
+                          <ul class="servicios_description" style="transform: translateY(-50px); width: 100%; height: 100%;">
+                            <li>&#10148; Traslado seguro de personal y colaboradores a donde se necesite</li>
+                            <li>&#10148; Dentro y fuera de la ciudad a nivel nacional</li>
+                            <li>&#10148; Servicios ajustados a las necesidades y presupuestos</li>
+                          </ul>                
+
+                        </div>
+
+                        
+                                    
+                        <!--Slider 2 -->
+                        <div class="slider_description" id="slider2" style="display: none;">
+                          <div class="slider_title">
+                            <p class="title_service">Turismo</p>
+                            <div class="line_gradient" style="display: grid;">
+                                <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                            </div>
+                          </div>
+                          <p class="parragraph-tourism" style="width: 100%; height: 100%;"> Contamos con vehículos para el transporte de servicio turístico, familiar y traslado a aeropuertos y más, que cumplen todos los protocolos de bioseguridad y con conductores profesionales.</p>
+                        </div>
+
+                        <!--Slider 3 -->
+                        <div class="slider_description" id="slider3" style="display: none;">
+                            <div class="slider_title">
+                              <p class="title_service">Escolar</p>
+                              <div class="line_gradient" style="display: grid;">
+                                  <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                              </div>
+                            </div>
+                            <p class="parragraph-tourism" style="width: 100%; height: 100%;">Vehículos seguros que cumplen con todo lo necesario para garantizar el cuidado y transporte de los niños </p>
+                        </div>
+
+                        <a href="https://wa.me/+573212212121" class="primary_button"> Contactar</a>
+
+
+                    </div> 
+                      <div class="slider_image">
+                        <img src="/Empresarial/empresarial_gif.gif" class="slider_img" style="height: 100%;"> <!--Debe mostrarse para SLIDER 1-->
+                        <img src="Empresarial/4.png" class="imagen_movil" alt="foto-toyota">
+                        <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2"> <!--Debe mostrarse para SLIDER 2, y SLIDER 3-->
+                        <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2">
+                      </div>
+                      
+                </div>
+                
+            <div class="right_arrow" onclick="changeSlider(1)"> > </div>
+
+    </div>
+
+
+    </section>
+    <br>
+    <!--contenido MOVIL 'EMPRESARIAL'-->
+    <section class="contenido_principal_movil">
+
+        <div class="main_content">
+                    <div class="slider_content">
+                        <div class="slider_wrapper">
+    
+                            <p class="text_service_m">Servicio</h2>
+                            <!--Slider 1 -->
+                            <div class="slider_description" id="slider1">
+                              <div class="slider_title">
+                                <p class="title_service_m">Empresarial</p>
+                              </div>    
+                            </div>
+                            <div class="saber_mas_button">
+                                <a href="html_movil/servicio_empresarial.html" class="primary_button_m"> Saber más</a>
+                            </div>
+
+                        </div> 
+                          <div class="slider_image">
+                            <img src="Empresarial/4.png" class="imagen_movil" alt="foto-toyota">
+                          </div>
+                          
+                    </div>    
+        </div>
+    
+    
+    </section>
+    <br>
+    <!--contenido MOVIL 'ESCOLAR'-->
+    <section class="contenido_principal_movil">
+
+        <div class="main_content">
+    
+                    <div class="slider_content">
+                        <div class="slider_wrapper">
+    
+                            <p class="text_service_m">Servicio</h2>
+                            <!--Slider 1 -->
+                            <div class="slider_description" id="slider1">
+                              <div class="slider_title">
+                                <p class="title_service_m">Escolar</p>
+                              </div>    
+                            </div>
+    
+                            <div class="saber_mas_button">
+                                <a href="html_movil/servicio_escolar.html" class="primary_button_m"> Saber más</a>
+                            </div>
+    
+                        </div> 
+                          <div class="slider_image">
+                            <img src="Escolar/2.png" class="imagen_movil" alt="foto-toyota">
+                          </div>
+                          
+                    </div>
+    
+        </div>
+    
+    
+    </section>
+    <br>
+    <!--contenido MOVIL 'TURISTICO'-->
+    <section class="contenido_principal_movil">
+
+        <div class="main_content">
+    
+                    <div class="slider_content">
+                        <div class="slider_wrapper">
+    
+                            <p class="text_service_m">Servicio</h2>
+                            <!--Slider 1 -->
+                            <div class="slider_description" id="slider1">
+                              <div class="slider_title">
+                                <p class="title_service_m">Turístico</p>
+                              </div>    
+                            </div>
+    
+                            <div class="saber_mas_button">
+                                <a href="html_movil/servicio_turismo.html" class="primary_button_m"> Saber más</a>
+                            </div>
+    
+                        </div> 
+                          <div class="slider_image">
+                            <img src="Empresarial/1.png" class="imagen_movil" alt="foto-toyota" style="transform: translateX(-6rem);">
+                          </div>
+                          
+                    </div>
+                    
+        </div>
+    
+    
+    </section>
+    
+
+    
+
+    <!-- (2) ventajas -->
+    <section class="ventajas">
+      <div class="advantages">
+          <a href="">        
+              <div class="ver-mas" style="display: grid; justify-content: space-around; font-size: x-large;" >
+                  <ion-icon name="chevron-down-outline" style="color: #D9D9D9;"></ion-icon>
+                  <ion-icon name="chevron-down-outline" style="color: #D9D9D9;"></ion-icon>
+                  <ion-icon name="chevron-down-outline" style="color: #D9D9D9;" ></ion-icon>
+              </div>
+          </a>
+  
+          <div class="line_gradient">
+              <div class="line_gradient_separation"></div>
+          </div>
+  
+          <div class="group">
+            <p class="advantages_title">Confiable</p>
+            <p class="advantages_subtitle">Conductores profesionales</p>
+          </div>
+  
+          <div class="line_gradient">
+              <div class="line_gradient_separation"></div>
+          </div>
+        
+          <div class="group">
+          <p class="advantages_title">Adaptable</p>
+          <p class="advantages_subtitle">A tus necesidades</p>
+          </div>
+  
+          <div class="line_gradient">
+              <div class="line_gradient_separation"></div>
+          </div>
+        
+          <div class="group">
+              <p class="advantages_title">Seguro</p>
+              <p class="advantages_subtitle">Monitorizado 24 horas</p>
+          </div>
+  
+          <div class="line_gradient">
+              <div class="line_gradient_separation"></div>
+          </div>
+        
+          <div class="group">
+              <p class="advantages_title">Tecnologico</p>
+              <p class="advantages_subtitle">Apps que gestionan el servicio</p>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- (3) clientes-->
+    <section class="clientes">
+
+        <div class="Nuestros_clientes" style="font-size: 48px; height: 350px;" id="social-responsability">
+            <h2> Nuestros clientes </h2>
+    
+            <div class="empresas-aliadas">
+    
+                <div class="slider">
+                    <div class="slide-container">
+                      <img src="/Sellos/essa.png" class="slide active">
+                      <img src="/Sellos/halliburton.png" class="slide">
+                      <img src="/Sellos/holiday inn.png" class="slide">
+                      <img src="/Sellos/hospital_universitario.png" class="slide">
+                      <img src="/Sellos/igenieros.png" class="slide">
+                      <img src="/Sellos/motal.png" class="slide">
+                      <img src="/Sellos/petrotiger.png" class="slide">
+                      <img src="/Sellos/saxon.png" class="slide">
+                      <img src="/Sellos/schlumbeger.png" class="slide">
+                      <img src="/Sellos/solar.png" class="slide">
+                      <img src="/Sellos/uis.png" class="slide">
+                    </div>
+                  </div>
+                
+            </div>
+
+            <br>
+    </section>
+    
+    <!-- (4) informacion-->
+    <section class="informacion" style="max-width: 100%;">
+        <div class="informacion-de-interes" style="display: flex; justify-content: space-around; max-width: 100%;">
+            <div class="info-box" style="text-align: left; transform: translateX(-50px);">
+                <h2 class="info_title">Nuestra Empresa</h2>
+                <p class="text-info-empresa"> Transcastañeda es una empresa confiable, especializada en la prestación de servicios de transporte empresarial, escolar, turismo, salud, con más de 20 años de experiencia en esta modalidad de transporte, garantizando la movilización de sus empleados, para lo cual ofrecemos todos nuestros vehículos apropiados en excelentes condiciones de calidad, brindando cumplimiento, eficiencia, seguridad y seriedad a nuestros usuarios.</p>
+            </div>
+            <div class="info-box" style="text-align: center;">
+                <h2 class="info_title">Enlaces rápidos</h2>
+                <a href="Contactanos.html"> <p class="text-info-empresa"> PQR's </p> </a>
+                <p class="text-info-empresa"> ¿Quiénes somos? </p>
+                <p class="text-info-empresa"> Términos y condiciones</p>
+                <p class="text-info-empresa"> Política de privacidad</p>
+                <p class="text-info-empresa"> Objetivo sistema integrado de gestión</p>
+            </div>
+            <div class="info-box" style="text-align: center;">
+                <h2 class="info_title">Horario de atención</h2>
+                <p class="text-info-empresa"> Lunes a viernes: 7:30 a.m. - 5:00 p.m.</p>
+                <p class="text-info-empresa"> Sábados: 8:00 a.m. - 11:30 a.m.</p>
+            </div>
+        </div>
+        
+    </section>
+
+     <!-- (5) legalidad-->
+    <section class="legalidad">
+        
+        <div class="Legality_seals">
+        
+            <img src="/Sellos/8.png"  class="seal_img">
+            <img src="/Sellos/10.png" class="seal_img">
+            <img src="/Sellos/11.png" class="seal_img">
+            <img src="/Sellos/12.png" class="seal_img">
+            <img src="/Sellos/13.png" class="seal_img">
+            <img src="/Sellos/14.png" class="seal_img">
+
+        </div>
+
+    </section>
+    
+     <!-- (6) derechos_reservados-->
+    <section class="derechos_reservados">
+        <div class="rights_reserved">
+            <p class="text_rights" style="font-size: 14px;">© 2023 TRANSCASTAÑEDA | TODOS LOS DERECHOS RESERVADOS</p> 
+        </div>
+    </section>
+     
+     
+    
+    <a href="https://wa.me/+573212212121" class="whatsapp" target="_blank">
+        <ion-icon name="logo-whatsapp" style="height: 50px; width: 50px; color: #FAFAFA;"></ion-icon>
+    </a>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</body>
+
+</html>
