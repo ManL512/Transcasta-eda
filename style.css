@@ -645,7 +645,7 @@ p {
     }
 
     .slider_content_saberMas{
-        height: auto;
+        height: 42rem;
         display: grid;
         width: 100%;
         padding: 0%;
@@ -676,21 +676,52 @@ p {
     }
 
     .slider_image_saberMas{
-        transform: translateY(15rem);
+        padding-top: 4rem;
         height: 2rem;
         max-width: 100%;
-
-        transform: translateX(-1.2rem);
+        transform: translateY(-7rem);
     }
 
     .slider_image_saberMas img {
         height: 12rem;
+        width: 80%;
+        transform: translateX(3rem);
     }
 
     .slider_image img{
         transform: translateX(-7rem);
     }
 
+    .parragraph-tourism_m{
+        text-align: left;
+        font: normal normal 300 18px/23px Lexend Deca;
+        letter-spacing: 0px;
+        color: #105471;
+        opacity: 1;
+    }
+
+    .contact_button{
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button_m{
+        color: #FAFAFA;
+        margin: 1rem 3rem;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        width: fit-content;
+        height: fit-content;
+        /* UI Properties */
+        border: none;
+        background: transparent linear-gradient(97deg, #156588 0%, #22673A 100%) 0% 0% no-repeat padding-box;
+        box-shadow: inset 3px 3px 6px #88D0DA96;
+        border-radius: 34px;
+        text-decoration: none;
+    }
+    
     .title_description_service h2{
         display: none;
     }
