@@ -804,5 +804,8 @@ p {
     .mapa_movil{
         display: none;
     }
+    .sede_content_m{
+        display: none;
+    }
   }
 
