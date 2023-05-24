@@ -896,6 +896,34 @@ opacity: 1;
         height: 12rem;
         transform: translateX(-2.7rem);
     }
+    /*PAGINA VISION Y MISION*/
+    .social-responsability h2{
+        font-size: 2rem;
+        max-width: 100%;
+    }
+    .title-policy{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .policy-item{
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+        height: 3rem;
+        margin: 0%;
+    }
+
+    .main_content_nosotros_m{
+        display: grid;
+    }
+
+    .imagen_nosotros_m{
+        display: flex;
+        height: 16rem;
+        justify-content: center;
+    }
+    .imagen_nosotros_m img{
+        height: 15rem;
+    }
 
     .ventajas{
         display: none;
