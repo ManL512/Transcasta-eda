@@ -235,6 +235,7 @@ MOVILES
     width: fit-content;
     height: 80rem; /* Se cambió la altura a la mitad de 80rem */
     overflow: hidden;
+    max-width: 100%;
   }
   
   .mapa_movil img {
