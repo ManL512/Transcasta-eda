@@ -231,14 +231,17 @@ MOVILES
     transform: translateX(-1rem);
   }
 
-  .mapa_movil{
+  .mapa_movil {
     width: fit-content;
-    height: 80rem;
+    height: 80rem; /* Se cambió la altura a la mitad de 80rem */
+    overflow: hidden;
   }
-
-  .mapa_movil img{
-    height: 100%;
-    width: 100%;
+  
+  .mapa_movil img {
+    height: 100%; /* Se cambió la altura a 50% */
+    width: 70rem;
+    transform: translateX(-20rem);
+    overflow: hidden;
   }
   
 
