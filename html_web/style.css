@@ -51,6 +51,19 @@
     transition: background-color 0.5s ease-in-out;
     background-color: #25d366;
 }
+.whatsapp:hover::before {
+    content: "Charlar con un asesor";
+    transform: translateY(20px);
+    position: absolute;
+    left: -11rem; /* Ajusta el valor según sea necesario para la posición deseada */
+    top: 0;
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    background-color: #063C53;/* Ajusta el color de fondo según sea necesario */
+    color: #FFFFFF; /* Ajusta el color del texto según sea necesario */
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+}
 
 .logo img {
     opacity: 1;
