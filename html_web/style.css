@@ -769,16 +769,25 @@ opacity: 1;
         padding: 0%;
         height: 0%;
         text-align: left;
-        font: normal normal 300 18px/23px Lexend Deca;
+        font: normal normal 300 1.5rem/23px Lexend Deca;
         letter-spacing: 0px;
         color: #105471;
+        opacity: 1;
+    }
+
+    .title_service{
+        font-size: 1.5rem;
+        text-align: left;
+        font: normal normal bold 2rem/20px Lexend Deca;
+        letter-spacing: 0px;
+        color: #063C53;
         opacity: 1;
     }
 
     .title_service_m{
         font-size: 1.5rem;
         text-align: left;
-        font: normal normal bold 30px/23px Lexend Deca;
+        font: normal normal bold 3rem/23px Lexend Deca;
         letter-spacing: 0px;
         color: #063C53;
         opacity: 1;
@@ -823,7 +832,7 @@ opacity: 1;
         color: #FAFAFA;
         margin: 1rem 3rem;
         box-sizing: border-box;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem 2rem;
         width: fit-content;
         height: fit-content;
