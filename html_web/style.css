@@ -39,7 +39,7 @@
     font-size: 20px;
     z-index: 9999;
     border-radius: 50%;
-    animation: blink 1s ease-in-out infinite;
+    animation: blink 2s ease-in-out infinite;
   }
 
 @keyframes blink {
@@ -51,6 +51,7 @@
     transition: background-color 0.5s ease-in-out;
     background-color: #25d366;
 }
+
 .whatsapp:hover::before {
     content: "Charlar con un asesor";
     transform: translateY(20px);
@@ -977,6 +978,10 @@ opacity: 1;
     }
 
     .contenido_principal{
+        display: none;
+    }
+
+    .whatsapp:hover::before{
         display: none;
     }
   }
