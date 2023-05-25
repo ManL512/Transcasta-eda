@@ -571,31 +571,25 @@ p {
 /* PAGINA APPS Y TECNOLOGIA */
 
 .slider_title_app{
+    display: flex;
+    align-items: center;
     width: 753px;
     height: 8rem;
     /* UI Properties */
     background: #054965 0% 0% no-repeat padding-box;
-    opacity: 1;
     text-align: center;
 }
-
-.app_name{
-    width: 1000px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal bold 80px/0% Lexend Deca;
-    letter-spacing: 0px;
+.slider_title_app p{
     color: #FFFFFF;
-    opacity: 1;
+    letter-spacing: 0px;
+    font: normal normal bold 5rem/150px Lexend Deca;
+    text-align: left;
 }
 
 .text_p_app{
-    width: 96px;
-    height: 63px;
     text-align: left;
     letter-spacing: 0px;
     color: #105471;
-    opacity: 1;
 }
 
 .playStore {
