@@ -1,14 +1,24 @@
 function toggleDescripcion(descripcionId) {
   const descripcionElement = document.getElementById(descripcionId);
-
-  // Cerrar todas las descripciones
   const descriptionElements = document.querySelectorAll('.description');
-  descriptionElements.forEach((description) => {
-    description.style.display = 'none';
-  });
 
-  // Mostrar la descripción correspondiente
-  descripcionElement.style.display = 'block';
+  // Verificar si la descripción correspondiente ya está abierta
+  const isDescripcionVisible = descripcionElement.style.display === 'block';
+
+  // Cerrar todas las descripciones si la descripción correspondiente ya está abierta
+  if (isDescripcionVisible) {
+    descriptionElements.forEach((description) => {
+      description.style.display = 'none';
+    });
+  } else {
+    // Cerrar todas las descripciones
+    descriptionElements.forEach((description) => {
+      description.style.display = 'none';
+    });
+
+    // Mostrar la descripción correspondiente
+    descripcionElement.style.display = 'block';
+  }
 }
 
 function toggleMadgalenaMedio(){
