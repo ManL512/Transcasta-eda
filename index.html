@@ -67,108 +67,127 @@
     (6) -- derechos_reservados
     
     -->
+    <style>
+        .slider_description {
+          display: none;
+        }
+        .slider_description.active {
+          display: block;
+        }
+        .slider_img {
+          display: none;
+        }
+        .slider_img.active {
+          display: block;
+        }
+      </style>
+
 
     <script>
+    function showPreviousSlider() {
+      const sliders = document.querySelectorAll('.slider_description');
+      const currentSlider = document.querySelector('.slider_description.active');
 
-        function changeSlider(num) {
-        // Obtenemos todos los sliders y las imágenes
-        var sliders = document.getElementsByClassName("slider_description");
-        var images = document.getElementsByClassName("slider_img");
+      const sliderImages = document.querySelectorAll('.slider_img');
+      const currentImage = document.querySelector('.slider_img.active');
 
-        // Buscamos el slider actual
-        var currentSlider = 0;
-        for (var i = 0; i < sliders.length; i++) {
-            if (sliders[i].style.display !== "none") {
-            currentSlider = i;
-            break;
-            }
-        }
+      let previousSlider = currentSlider.previousElementSibling;
+      let previousImage = currentImage.previousElementSibling;
 
-        // Ocultamos el slider y la imagen actual
-        sliders[currentSlider].style.display = "none";
-        images[currentSlider].style.display = "none";
+      if (!previousSlider) {
+        previousSlider = sliders[sliders.length - 1];
+      }
+      if (!previousImage) {
+        previousImage = sliderImages[sliderImages.length - 1];
+      }
 
-        // Mostramos el slider y la imagen siguiente o anterior
-        var nextSlider = currentSlider + num;
-        if (nextSlider < 0) {
-            nextSlider = sliders.length - 1;
-        } else if (nextSlider >= sliders.length) {
-            nextSlider = 0;
-        }
-        sliders[nextSlider].style.display = "block";
-        images[nextSlider].style.display = "block";
-}
-  
+      currentSlider.classList.remove('active');
+      previousSlider.classList.add('active');
+
+      currentImage.classList.remove('active');
+      previousImage.classList.add('active');
+    }
+
+    function showNextSlider() {
+      const sliders = document.querySelectorAll('.slider_description');
+      const currentSlider = document.querySelector('.slider_description.active');
+
+      const sliderImages = document.querySelectorAll('.slider_img');
+      const currentImage = document.querySelector('.slider_img.active');
+
+      let nextSlider = currentSlider.nextElementSibling;
+      let nextImage = currentImage.nextElementSibling;
+
+      if (!nextSlider) {
+        nextSlider = sliders[0];
+      }
+      if (!nextImage) {
+        nextImage = sliderImages[0];
+      }
+
+      currentSlider.classList.remove('active');
+      nextSlider.classList.add('active');
+
+      currentImage.classList.remove('active');
+      nextImage.classList.add('active');
+    }
     </script>
-
     <!-- (1) contenido principal WEB -->
     <section class="contenido_principal">
-
-    <div class="main_content">
-            <div class="left_arrow" onclick="changeSlider(-1)"> < </div>
-
-                <div class="slider_content">
-                    <div class="slider_wrapper">
-                        <p class="text_service">Servicio</p>
-                        <!--Slider 1 -->
-                        <div class="slider_description" id="slider1">
-
-                          <div class="slider_title">
-                            <p class="title_service">Empresarial</p>
-                            <div class="line_gradient" style="display: grid;">
-                              <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
-                            </div>
-                          </div>
-                          <h2 style="transform: translateY(-100px);" class="title_description_service">Brindamos a empresas:</h2>
-                          <ul class="servicios_description" style="transform: translateY(-6rem); width: 100%; height: 100%;">
-                            <li>&#10148; Traslado seguro de personal y colaboradores a donde se necesite.</li>
-                            <li>&#10148; Dentro y fuera de la ciudad a nivel nacional.</li>
-                            <li>&#10148; Servicios ajustados a las necesidades y presupuestos.</li>
-                          </ul>                
-
-                        </div>                
-                        <!--Slider 2 -->
-                        <div class="slider_description" id="slider2" style="display: none;">
-                          <div class="slider_title">
-                            <p class="title_service">Turismo</p>
-                            <div class="line_gradient" style="display: grid;">
-                                <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
-                            </div>
-                          </div>
-                          <p class="parragraph-tourism" style="width: 100%; height: 100%;"> Contamos con vehículos para el transporte de servicio turístico, familiar y traslado a aeropuertos y más, que cumplen todos los protocolos de bioseguridad y con conductores profesionales.</p>
-                        </div>
-                        <!--Slider 3 -->
-                        <div class="slider_description" id="slider3" style="display: none;">
-                            <div class="slider_title">
-                              <p class="title_service">Escolar</p>
-                              <div class="line_gradient" style="display: grid;">
-                                  <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
-                              </div>
-                            </div>
-                            <p class="parragraph-tourism" style="width: 100%; height: 100%;">Vehículos seguros que cumplen con todo lo necesario para garantizar el cuidado y transporte de los niños </p>
-                        </div>
-
-                        <div class="boton_contacto" style="transform: translateY(-4rem);">
-                            <a href="https://wa.me/+573212212121" class="primary_button" > Contactar</a>
-                        </div>
-
-                    </div> 
-                      <div class="slider_image">
-                        <img src="/Empresarial/empresarial_gif.gif" class="slider_img"> <!--Debe mostrarse para SLIDER 1-->
-                        <img src="Empresarial/4.png" class="imagen_movil" alt="foto-toyota">
-                        <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2"> <!--Debe mostrarse para SLIDER 2, y SLIDER 3-->
-                        <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2">
-                      </div>
-                      
+        <div class="main_content">
+            <div class="left_arrow" onclick="showPreviousSlider()"> &lt; </div>
+          <div class="slider_content">
+            <div class="slider_wrapper">
+              <p class="text_service">Servicio</p>
+              <!--Slider 1 -->
+              <div class="slider_description active" id="slider1">
+                <div class="slider_title">
+                  <p class="title_service">Empresarial</p>
+                  <div class="line_gradient" style="display: grid;">
+                    <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                  </div>
                 </div>
-                
-            <div class="right_arrow" onclick="changeSlider(1)"> > </div>
-
-    </div>
-
-
+                <h2 style="transform: translateY(-100px);" class="title_description_service">Brindamos a empresas:</h2>
+                <ul class="servicios_description" style="transform: translateY(-6rem); width: 100%; height: 100%;">
+                  <li>&#10148; Traslado seguro de personal y colaboradores a donde se necesite.</li>
+                  <li>&#10148; Dentro y fuera de la ciudad a nivel nacional.</li>
+                  <li>&#10148; Servicios ajustados a las necesidades y presupuestos.</li>
+                </ul>
+              </div>
+              <!--Slider 2 -->
+              <div class="slider_description" id="slider2">
+                <div class="slider_title">
+                  <p class="title_service">Turismo</p>
+                  <div class="line_gradient" style="display: grid;">
+                    <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                  </div>
+                </div>
+                <p class="parragraph-tourism" style="width: 100%; height: 100%;">Contamos con vehículos para el transporte de servicio turístico, familiar y traslado a aeropuertos y más, que cumplen todos los protocolos de bioseguridad y con conductores profesionales.</p>
+              </div>
+              <!--Slider 3 -->
+              <div class="slider_description" id="slider3">
+                <div class="slider_title">
+                  <p class="title_service">Escolar</p>
+                  <div class="line_gradient" style="display: grid;">
+                    <div class="line_gradient_separation" style="transform: rotate(360deg); width: 100px;"></div>
+                  </div>
+                </div>
+                <p class="parragraph-tourism" style="width: 100%; height: 100%;">Vehículos seguros que cumplen con todo lo necesario para garantizar el cuidado y transporte de los niños </p>
+              </div>
+              <div class="boton_contacto" style="transform: translateY(-4rem);">
+                <a href="https://wa.me/+573212212121" class="primary_button">Contactar</a>
+              </div>
+            </div>
+            <div class="slider_image">
+              <img src="/Empresarial/empresarial_gif.gif" class="slider_img active">
+              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2">
+              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-3">
+            </div>
+          </div>
+          <div class="right_arrow" onclick="showNextSlider()"> &gt; </div>
+        </div>
     </section>
-    <br>
+
     <!--contenido MOVIL 'EMPRESARIAL'-->
     <section class="contenido_principal_movil">
 
@@ -196,9 +215,9 @@
                     </div>    
         </div>
     
-    
-    </section>
     <br>
+    </section>
+
     <!--contenido MOVIL 'ESCOLAR'-->
     <section class="contenido_principal_movil">
 
@@ -229,9 +248,9 @@
     
         </div>
     
-    
-    </section>
     <br>
+    </section>
+
     <!--contenido MOVIL 'TURISTICO'-->
     <section class="contenido_principal_movil">
 
@@ -265,9 +284,6 @@
     
     </section>
     
-
-    
-
     <!-- (2) ventajas -->
     <section class="ventajas">
       <div class="advantages">
@@ -316,7 +332,6 @@
           </div>
       </div>
   </section>
-
 
     <!-- (3) clientes-->
     <section class="clientes">
