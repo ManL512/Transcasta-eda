@@ -740,8 +740,13 @@ opacity: 1;
         padding-left: 1rem;
     }
     .slider_title{
+        height: 0%;
         padding: 0%;
         margin: 0%;
+    }
+
+    .slider_description{
+        transform: translateY(-2rem);
     }
 
     .slider_content{
@@ -754,7 +759,7 @@ opacity: 1;
     }
 
     .slider_content_saberMas{
-        height: 42rem;
+        height: auto;
         display: grid;
         width: 100%;
         padding: 0%;
@@ -795,6 +800,7 @@ opacity: 1;
 
     .slider_image_saberMas{
         padding-top: 4rem;
+        padding-bottom: 2rem;
         height: 2rem;
         max-width: 100%;
         transform: translateY(-7rem);
@@ -812,7 +818,7 @@ opacity: 1;
 
     .parragraph-tourism_m{
         text-align: left;
-        font: normal normal 300 18px/23px Lexend Deca;
+        font: normal normal 300 1.5rem/23px Lexend Deca;
         letter-spacing: 0px;
         color: #105471;
         opacity: 1;
@@ -908,6 +914,10 @@ opacity: 1;
     .imagen_movil{
         height: 12rem;
         transform: translateX(-2.7rem);
+    }
+
+    .servicios_description li{
+        font-size: 1.5rem;
     }
     /*PAGINA VISION Y MISION*/
     .social-responsability h2{
