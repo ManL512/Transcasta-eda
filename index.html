@@ -84,58 +84,64 @@
 
 
     <script>
-    function showPreviousSlider() {
-      const sliders = document.querySelectorAll('.slider_description');
-      const currentSlider = document.querySelector('.slider_description.active');
+    document.addEventListener("DOMContentLoaded", function() {
+  // Obtener los elementos relevantes
+  var sliders = document.getElementsByClassName("slider_description");
+  var sliderImages = document.getElementsByClassName("slider_img");
+  var leftArrow = document.getElementsByClassName("left_arrow")[0];
+  var rightArrow = document.getElementsByClassName("right_arrow")[0];
+  var currentSlider = 0;
 
-      const sliderImages = document.querySelectorAll('.slider_img');
-      const currentImage = document.querySelector('.slider_img.active');
-
-      let previousSlider = currentSlider.previousElementSibling;
-      let previousImage = currentImage.previousElementSibling;
-
-      if (!previousSlider) {
-        previousSlider = sliders[sliders.length - 1];
-      }
-      if (!previousImage) {
-        previousImage = sliderImages[sliderImages.length - 1];
-      }
-
-      currentSlider.classList.remove('active');
-      previousSlider.classList.add('active');
-
-      currentImage.classList.remove('active');
-      previousImage.classList.add('active');
+  // Función para mostrar el slider actual
+  function showSlider(index) {
+    // Ocultar todos los sliders y las imágenes
+    for (var i = 0; i < sliders.length; i++) {
+      sliders[i].classList.remove("active");
+      sliderImages[i].style.display = "none";
     }
 
-    function showNextSlider() {
-      const sliders = document.querySelectorAll('.slider_description');
-      const currentSlider = document.querySelector('.slider_description.active');
+    // Mostrar el slider y la imagen actual
+    sliders[index].classList.add("active");
+    sliderImages[index].style.display = "block";
+  }
 
-      const sliderImages = document.querySelectorAll('.slider_img');
-      const currentImage = document.querySelector('.slider_img.active');
-
-      let nextSlider = currentSlider.nextElementSibling;
-      let nextImage = currentImage.nextElementSibling;
-
-      if (!nextSlider) {
-        nextSlider = sliders[0];
-      }
-      if (!nextImage) {
-        nextImage = sliderImages[0];
-      }
-
-      currentSlider.classList.remove('active');
-      nextSlider.classList.add('active');
-
-      currentImage.classList.remove('active');
-      nextImage.classList.add('active');
+  // Función para pasar al slider siguiente
+  function nextSlider() {
+    currentSlider++;
+    if (currentSlider >= sliders.length) {
+      currentSlider = 0;
     }
+    showSlider(currentSlider);
+  }
+
+  // Función para volver al slider anterior
+  function prevSlider() {
+    currentSlider--;
+    if (currentSlider < 0) {
+      currentSlider = sliders.length - 1;
+    }
+    showSlider(currentSlider);
+  }
+
+  // Evento clic en la flecha derecha
+  rightArrow.addEventListener("click", function() {
+    nextSlider();
+  });
+
+  // Evento clic en la flecha izquierda
+  leftArrow.addEventListener("click", function() {
+    prevSlider();
+  });
+
+  // Mostrar el primer slider al cargar la página
+  showSlider(currentSlider);
+});
+
     </script>
     <!-- (1) contenido principal WEB -->
     <section class="contenido_principal">
         <div class="main_content">
-            <div class="left_arrow" onclick="showPreviousSlider()"> &lt; </div>
+            <div class="left_arrow"> &lt; </div>
           <div class="slider_content">
             <div class="slider_wrapper">
               <p class="text_service">Servicio</p>
@@ -179,12 +185,12 @@
               </div>
             </div>
             <div class="slider_image">
-              <img src="/Empresarial/empresarial_gif.gif" class="slider_img active">
-              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2">
-              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-3">
+              <img src="/Empresarial/empresarial_gif.gif" class="slider_img active"> <!--IMAGEN PARA SLIDER 1-->
+              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-2"> <!--IMAGEN PARA SLIDER 2-->
+              <img src="/Turismo/turismo_gif.gif" alt="" style="display: none; height: 100%;" class="slider_img slider_img-3"> <!--IMAGEN PARA SLIDER 3-->
             </div>
           </div>
-          <div class="right_arrow" onclick="showNextSlider()"> &gt; </div>
+          <div class="right_arrow"> &gt; </div>
         </div>
     </section>
 
@@ -220,12 +226,9 @@
 
     <!--contenido MOVIL 'ESCOLAR'-->
     <section class="contenido_principal_movil">
-
-        <div class="main_content">
-    
+        <div class="main_content">    
                     <div class="slider_content">
-                        <div class="slider_wrapper">
-    
+                        <div class="slider_wrapper">    
                             <p class="text_service_m">Servicio</h2>
                             <!--Slider 1 -->
                             <div class="slider_description_m" id="slider1">
@@ -237,17 +240,13 @@
     
                             <div class="saber_mas_button">
                                 <a href="/html_movil/servicio_escolar.html" class="primary_button_m"> Saber más</a>
-                            </div>
-    
+                            </div>  
                         </div> 
                           <div class="slider_image">
                             <img src="Escolar/2.png" class="imagen_movil" alt="foto-toyota">
-                          </div>
-                          
+                          </div>  
                     </div>
-    
-        </div>
-    
+        </div>    
     <br>
     </section>
 
