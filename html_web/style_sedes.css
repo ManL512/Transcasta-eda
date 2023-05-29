@@ -186,10 +186,12 @@ MOVILES
 
   .sede_details_city{
     font-size: 1.6rem;
+
   }
 
   .sede_details_info{
     font-size: 1.2rem;
+    width: 16rem;
   }
 
   .call {
