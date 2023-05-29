@@ -656,7 +656,7 @@ text-align: center;
 background: transparent url('/Sellos/Satelite.png') 0% 0% no-repeat padding-box;
 mix-blend-mode: luminosity;
 grid-column: 1 / 2;
-background-position: -18rem 0;
+background-position: -18rem -5rem;
 }
 
 .rastreo_left_content p {
@@ -793,6 +793,7 @@ opacity: 1;
     }
 
     .title_service_m{
+        transform: translateY(2rem);
         font-size: 1.5rem;
         text-align: left;
         font: normal normal bold 3rem/23px Lexend Deca;
