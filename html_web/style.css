@@ -656,6 +656,7 @@ text-align: center;
 background: transparent url('/Sellos/Satelite.png') 0% 0% no-repeat padding-box;
 mix-blend-mode: luminosity;
 grid-column: 1 / 2;
+background-position: -18rem 0;
 }
 
 .rastreo_left_content p {
@@ -908,11 +909,19 @@ opacity: 1;
         font-size: 1.5rem;
         letter-spacing: 0px;
         color: #105471;
+        text-align: left;
+    }
+
+    .imagen_app{
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .imagen_app img{
         height: 30rem;
-        width: 120%;
+        width: 150%;
+        transform: translateX(-6rem);
+
     }
     .slider_img{
         display: none;
