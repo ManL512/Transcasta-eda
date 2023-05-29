@@ -157,6 +157,10 @@ p {
     position: relative;
 }
 
+.slider_image img{
+    overflow: hidden;
+}
+
 .slider_img {
     height: 35rem;
     width: 100%;
@@ -1030,10 +1034,10 @@ opacity: 1;
     .mapa_movil{
         display: none;
     }
-    .sede_content_m{
+
+    .Sede_content_m{
         display: none;
     }
-
     /*Pagina mision-vision*/
     .right-side{
         transform: translateX(-16rem);
