@@ -746,6 +746,7 @@ opacity: 1;
         padding-left: 1rem;
     }
     .slider_title{
+        transform: translateY(-2rem);
         height: 0%;
         padding: 0%;
         margin: 0%;
@@ -873,7 +874,7 @@ opacity: 1;
         display: flex;
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
-        transform: translateY(1rem)
+        transform: translateY(-2rem)
     }
 
     .main_content_m{
