@@ -867,6 +867,7 @@ opacity: 1;
         display: flex;
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
+        transform: translateY(1rem)
     }
 
     .main_content_m{
@@ -1032,6 +1033,8 @@ opacity: 1;
     .sede_content_m{
         display: none;
     }
+
+    
 
     /*Pagina sedes*/
 
