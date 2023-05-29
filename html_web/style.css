@@ -1004,6 +1004,7 @@ opacity: 1;
 
   @media only screen and (min-width: 750px) {
       /* Ocultar el icono de menú hamburguesa en la versión de escritorio */
+
     .menu_icon{
         display: none;
     }
@@ -1030,6 +1031,12 @@ opacity: 1;
     }
     .sede_content_m{
         display: none;
+    }
+
+    /*Pagina sedes*/
+
+    .sede{
+        padding-left: 1rem;
     }
   }
   
