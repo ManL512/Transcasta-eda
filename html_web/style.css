@@ -651,6 +651,7 @@ p {
     color: #063C53;
 }
 .Legality_seals {
+    max-width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -665,6 +666,7 @@ p {
     margin: 10px;
 }
 .Legality_seals img{
+    width: 26rem;
     mix-blend-mode: darken;
     opacity: 1;
     height: 100px;
